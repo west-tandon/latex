@@ -1,527 +1,2107 @@
-@preamble{ "\newcommand{\sigir}[1]{Proceedings of the #1 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval}" }
-@preamble{ "\newcommand{\cikm}[1]{Proceedings of the #1 International Conference on Information and Knowledge Management}" }
-@preamble{ "\newcommand{\wsdm}[1]{Proceedings of the #1 ACM International Conference on Web Search and Data Mining}" }
+@PREAMBLE{ "\newcommand{\sigir}[1]{Proceedings of the #1 Annual International
+	   ACM SIGIR Conference on Research and Development in Information
+	   Retrieval}" }
+@PREAMBLE{ "\newcommand{\cikm}[1]{Proceedings of the #1 International
+	   Conference on Information and Knowledge Management}" }
+@PREAMBLE{ "\newcommand{\wsdm}[1]{Proceedings of the #1 ACM International
+	   Conference on Web Search and Data Mining}" }
 
-
-@inproceedings {raat,
- author = {Elbagoury, A. and Crane, M. and Lin, J.},
- title = {Rank-at-a-time query processing},
- booktitle = {Proceedings of the 2016 ACM International Conference on the Theory of Information Retrieval},
- year = {2016},
- pages = {229--232},
- numpages = {4}
+@Proceedings{	  **key*,
+  editor	= {Xiaofang Zhou},
+  title		= {Database Technologies 2002, Thirteenth Australasian
+		  Database Conference (ADC2002), Monash University,
+		  Melbourne, Victoria, January/February 2002},
+  booktitle	= {ADC},
+  publisher	= {Australian Computer Society},
+  series	= {CRPIT},
+  volume	= {5},
+  year		= {2002},
+  isbn		= {0-909-92583-6},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{broder:wand:2003,
- author = {Broder, A. Z. and Carmel, D. and Herscovici, M. and Soffer, A. and Zien, J.},
- title = {Efficient query evaluation using a two-level retrieval process},
- booktitle = {\cikm{12th}},
- year = {2003},
- pages = {426--434},
- numpages = {9}
+@InProceedings{	  abadi:column-stores:2008,
+  author	= {Abadi, D. J. and Madden, S. R. and Hachem, N.},
+  title		= {Column-stores vs. row-stores: How different are they
+		  really?},
+  booktitle	= {Proceedings of the 2008 ACM SIGMOD International
+		  Conference on Management of Data},
+  year		= {2008}
 }
 
-@inproceedings{dimopoulos:blockmax:2013,
-  title={Optimizing top-k document retrieval strategies for block-max indexes},
-  author={Dimopoulos, C. and Nepomnyachiy, S. and Suel, T.},
-  booktitle={\wsdm{6th}},
-  pages={113--122},
-  year={2013}
+@InProceedings{	  agarwal:fast:2012,
+  author	= {Deepak Agarwal and Maxim Gurevich},
+  title		= {Fast top-k retrieval for model based recommendation},
+  booktitle	= {Proc.\ of the Fifth Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2012},
+  pages		= {483-492},
+  ee		= {http://doi.acm.org/10.1145/2124295.2124354},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{ding:blockmax:2011,
-  title={Faster top-k document retrieval using block-max indexes},
-  author={Ding, S. and Suel, T.},
-  booktitle={\sigir{34th}},
-  pages={993--1002},
-  year={2011}
+@InProceedings{	  aly:taily:2013,
+  title		= {Taily: shard selection using the tail of score
+		  distributions},
+  author	= {Aly, Robin and Hiemstra, Djoerd and Demeester, Thomas},
+  booktitle	= {Proceedings of the 36th international ACM SIGIR conference
+		  on Research and development in information retrieval},
+  pages		= {673--682},
+  year		= {2013},
+  organization	= {ACM}
 }
 
-@article{moffat:memory-efficient:1996,
-  title={Self-indexing inverted files for fast text retrieval},
-  author={Moffat, Alistair and Zobel, Justin},
-  journal={ACM Transactions on Information Systems (TOIS)},
-  volume={14},
-  number={4},
-  pages={349--379},
-  year={1996},
-  publisher={ACM}
+@InProceedings{	  anh:impact:2002,
+  author	= {Vo Ngoc Anh and Alistair Moffat},
+  title		= {Impact transformation: effective and efficient web
+		  retrieval},
+  booktitle	= {Proc.\ of the 25th Annual Int.\ ACM SIGIR Conf.\ on
+		  Research and Development in Information Retrieval},
+  year		= {2002},
+  pages		= {3-10}
 }
 
-@article{moffat:memory:1994,
-  title={Memory efficient ranking},
-  author={Moffat, Alistair and Zobel, Justin and Sacks-Davis, Ron},
-  journal={Information Processing \& Management},
-  volume={30},
-  number={6},
-  pages={733--744},
-  year={1994},
-  publisher={Elsevier}
+@InProceedings{	  anh:improved:2002,
+  author	= {Vo Ngoc Anh and Alistair Moffat},
+  title		= {Improved Retrieval Effectiveness Through Impact
+		  Transformation},
+  booktitle	= {Proc.\ of the 13th Australasian Database Conference},
+  year		= {2002},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{anh:vector:2001,
-  title={Vector-space ranking with effective early termination},
-  author={Anh, V. N. and de Kretser, O. and Moffat, A.},
-  booktitle={\sigir{24th}},
-  pages={35--42},
-  year={2001}
+@Article{	  anh:improved:2006,
+  author	= {V. N. Anh and A. Moffat},
+  journal	= {IEEE Transactions on Knowledge and Data Engineering},
+  title		= {Improved word-aligned binary compression for text
+		  indexing},
+  year		= {2006},
+  volume	= {18},
+  number	= {6},
+  pages		= {857-861},
+  keywords	= {binary codes;data compression;indexing;information
+		  retrieval;text analysis;compressed inverted
+		  indexes;improved word-aligned binary compression;text
+		  indexing;text retrieval system;word-aligned binary coding
+		  carry method;Binary
+		  codes;Compaction;Databases;Decoding;Frequency;Indexing;Information
+		  retrieval;Probability distribution;Data compaction and
+		  compression;Web searching.;binary code;compression;file
+		  organization;indexing methods;inverted index;text retrieval
+		  system;text searching;textual databases},
+  issn		= {1041-4347},
+  month		= {June}
 }
 
-@article{persin:saat:1996,
-  title={Filtered document retrieval with frequency-sorted indexes},
-  author={Persin, Michael and Zobel, Justin and Sacks-Davis, Ron},
-  journal={JASIS},
-  volume={47},
-  number={10},
-  pages={749--764},
-  year={1996}
+@Article{	  anh:inverted:2005,
+  author	= "Anh, V. N. and Moffat, A.",
+  title		= "Inverted index compression using word-aligned binary
+		  codes",
+  journal	= "Information Retrieval",
+  year		= "2005",
+  month		= "Jan",
+  day		= "01",
+  volume	= "8",
+  number	= "1",
+  pages		= "151--166",
+  abstract	= "We examine index representation techniques for
+		  document-based inverted files, and present a mechanism for
+		  compressing them using word-aligned binary codes. The new
+		  approach allows extremely fast decoding of inverted lists
+		  during query processing, while providing compression rates
+		  better than other high-throughput representations. Results
+		  are given for several large text collections in support of
+		  these claims, both for compression effectiveness and query
+		  efficiency.",
+  issn		= "1573-7659"
 }
 
-@inproceedings{lin:jass:2015,
-  title={Anytime ranking for impact-ordered indexes},
-  author={Lin, J. and Trotman, A.},
-  booktitle={Proceedings of the 2015 International Conference on The Theory of Information Retrieval},
-  pages={301--304},
-  year={2015}
+@InProceedings{	  anh:pruned:2006,
+  title		= {Pruned query evaluation using pre-computed impacts},
+  author	= {Anh, V. N. and Moffat, A.},
+  booktitle	= {\sigir{29th}},
+  pages		= {372--379},
+  year		= {2006}
 }
 
-@inbook{manning:intro-to-ir:2008,
- author = {Manning, Christopher D. and Raghavan, Prabhakar and Sch\"{u}tze, Hinrich},
- title = {Introduction to Information Retrieval},
- year = {2008},
- isbn = {0521865719, 9780521865715},
- publisher = {Cambridge University Press},
- address = {New York, NY, USA},
- chapter = {1.2}
+@InProceedings{	  anh:simplified:2005,
+  author	= {Vo Ngoc Anh and Alistair Moffat},
+  title		= {Simplified similarity scoring using term ranks},
+  booktitle	= {Proc.\ of the 28th Annual Int.\ ACM SIGIR Conf.\ on
+		  Research and Development in Information Retrieval},
+  year		= {2005},
+  pages		= {226-233},
+  ee		= {http://doi.acm.org/10.1145/1076034.1076075},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{zobel:survey:2006,
- author = {Zobel, J. and Moffat, A.},
- title = {Inverted files for text search engines},
- journal = {ACM Computing Surveys},
- issue_date = {2006},
- volume = {38},
- number = {2},
- month = jul,
- year = {2006},
- articleno = {6}
+@InProceedings{	  anh:vector-space:2001,
+  title		= {Vector-space ranking with effective early termination},
+  author	= {Anh, V. N. and de Kretser, O. and Moffat, A.},
+  booktitle	= {\sigir{24th}},
+  pages		= {35--42},
+  year		= {2001}
 }
 
-@article{turtle:queryeval:1995,
- title = "Query evaluation: Strategies and optimizations",
- journal = "Information Processing \& Management",
- volume = "31",
- number = "6",
- pages = "831--850",
- year = "1995",
- author = "H. Turtle and J. Flood"
+@InProceedings{	  arroyuelo:to:2012,
+  author	= {Arroyuelo, Diego and Gonz\'{a}lez, Sen{\'e}n and Marin,
+		  Mauricio and Oyarz\'{u}n, Mauricio and Suel, Torsten},
+  title		= {To Index or Not to Index: Time-space Trade-offs in Search
+		  Engines with Positional Ranking Functions},
+  booktitle	= {Proceedings of the 35th International ACM SIGIR Conference
+		  on Research and Development in Information Retrieval},
+  series	= {SIGIR '12},
+  year		= {2012},
+  isbn		= {978-1-4503-1472-5},
+  location	= {Portland, Oregon, USA},
+  pages		= {255--264},
+  numpages	= {10},
+  acmid		= {2348320},
+  publisher	= {ACM},
+  keywords	= {positional indexing, text compression for snippet
+		  generation}
 }
 
-@inproceedings{kaszkiel:taat-daat:1998,
- author = {Kaszkiel, M. and Zobel, J.},
- title = {Term-ordered query evaluation versus document-ordered query evaluation for large document databases},
- booktitle = {\sigir{21th}},
- year = {1998},
- pages = {343--344},
- numpages = {2}
+@InProceedings{	  asadi:effectivenessefficiency:2013,
+  author	= {Nima Asadi and Jimmy Lin},
+  title		= {Effectiveness/efficiency tradeoffs for candidate
+		  generation in multi-stage retrieval architectures},
+  booktitle	= {Proc.\ of the 36th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2013},
+  url		= {http://doi.acm.org/10.1145/2484028.2484132},
+  doi		= {10.1145/2484028.2484132},
+  timestamp	= {Mon, 03 Nov 2014 17:41:42 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/sigir/AsadiL13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{nister:scalable:2006, 
-author={D. Nister and H. Stewenius}, 
-booktitle={2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
-title={Scalable recognition with a vocabulary tree}, 
-year={2006}, 
-pages={2161-2168}
+@InProceedings{	  asadi:fast:2012,
+  author	= {Asadi, N. and Lin, J.},
+  title		= {Fast candidate generation for two-phase document ranking:
+		  Postings list intersection with bloom filters},
+  booktitle	= {Proceedings of the 21st ACM International Conference on
+		  Information and Knowledge Management},
+  year		= {2012},
+  pages		= {2419--2422},
+  numpages	= {4}
 }
 
-@inproceedings{bendersky:analysis-long-queries:2009,
- author = {Bendersky, M. and Croft, W. B.},
- title = {Analysis of long queries in a large scale search log},
- booktitle = {Proceedings of the 2009 Workshop on Web Search Click Data},
- year = {2009},
- pages = {8--14},
- numpages = {7},
+@PhDThesis{	  asadi:multi-stage:2013,
+  author	= {N. Asadi},
+  title		= {Multi-Stage Search Architectures for Streaming Documents},
+  school	= {University of Maryland},
+  year		= {2013}
 }
 
-@article{gupta:verbose:2015,
- author = {Manish Gupta and Michael Bendersky},
- title = {Information Retrieval with Verbose Queries},
- journal = {Foundations and Trends in Information Retrieval},
- year = {2015},
- volume = {9},
- number = {3-4},
- pages = {209-354}
+@InProceedings{	  baeza-yates:efficiency:2009,
+  title		= {Efficiency trade-offs in two-tier web search systems},
+  author	= {Baeza-Yates, Ricardo and Murdock, Vanessa and Hauff,
+		  Claudia},
+  booktitle	= {Proceedings of the 32nd international ACM SIGIR conference
+		  on Research and development in information retrieval},
+  pages		= {163--170},
+  year		= {2009},
+  organization	= {ACM}
 }
 
-@inproceedings{huston:evaluating-verbose:2010,
- author = {Huston, S. and Croft, W. B.},
- title = {Evaluating verbose query processing techniques},
- booktitle = {\sigir{33rd}},
- year = {2010},
- pages = {291--298},
- numpages = {8}
+@Book{		  baeza-yates:modern:1999,
+  author	= {Ricardo A. Baeza-Yates and Berthier A. Ribeiro-Neto},
+  title		= {Modern Information Retrieval},
+  publisher	= {ACM Press / Addison-Wesley},
+  year		= {1999},
+  isbn		= {0-201-39829-X},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{shekhar:image-retrieval:2012, 
- author={R. Shekhar and C. V. Jawahar}, 
- booktitle={Proceedings of the 10th IAPR International Workshop on Document Analysis Systems}, 
- title={Word image retrieval using bag of visual words}, 
- year={2012}, 
- pages={297-301},
+@Article{	  barroso:web:2003,
+  title		= {Web search for a planet: The Google cluster architecture},
+  author	= {Barroso, Luiz Andr{\'e} and Dean, Jeffrey and Holzle, Urs},
+  journal	= {IEEE micro},
+  volume	= {23},
+  number	= {2},
+  pages		= {22--28},
+  year		= {2003},
+  publisher	= {IEEE}
 }
 
-@article{liu:image-retrieval:2013,
-  title={Image retrieval based on bag-of-words model},
-  author={Liu, J.},
-  journal={arXiv preprint arXiv:1304.5168},
-  year={2013}
+@InProceedings{	  bast:io-top-k:2006,
+  author	= {Holger Bast and Debapriyo Majumdar and Ralf Schenkel and
+		  Martin Theobald and Gerhard Weikum },
+  title		= {{IO}-{Top}-{K}: Index-access Optimized Top-k Query
+		  Processing},
+  booktitle	= {Proc.\ of the 32th Int.\ Conf.\ on Very Large Data Bases},
+  year		= {2006}
 }
 
-@inproceedings{low:sift:1999,
-  title={Object recognition from local scale-invariant features},
-  author={Low, D. G.},
-  booktitle={Proceedings of the 7th IEEE International Conference on Computer Vision},
-  volume={2},
-  pages={1150--1157},
-  year={1999}
+@InProceedings{	  bay:surf:2006,
+  title		= {Surf: Speeded up robust features},
+  author	= {Bay, H. and Tuytelaars, T. and Van Gool, L.},
+  booktitle	= {Proceedings of the 9th European Conference on Computer
+		  Vision},
+  pages		= {404--417},
+  year		= {2006},
+  publisher	= {Springer}
 }
 
-@inproceedings{jiang:keypoints:2007,
-  title={Towards optimal bag-of-features for object categorization and semantic video retrieval},
-  author={Jiang, Y.-G. and Ngo, C.-W. and Yang, J.},
-  booktitle={Proceedings of the 6th ACM international Conference on Image and Video Retrieval},
-  pages={494--501},
-  year={2007}
+@InProceedings{	  bendersky:analysis:2009,
+  author	= {Bendersky, M. and Croft, W. B.},
+  title		= {Analysis of long queries in a large scale search log},
+  booktitle	= {Proceedings of the 2009 Workshop on Web Search Click
+		  Data},
+  year		= {2009},
+  pages		= {8--14},
+  numpages	= {7}
 }
 
-@inproceedings{bay:surf:2006,
-  title={Surf: Speeded up robust features},
-  author={Bay, H. and Tuytelaars, T. and Van Gool, L.},
-  booktitle={Proceedings of the 9th European Conference on Computer Vision},
-  pages={404--417},
-  year={2006},
-  publisher={Springer}
+@Article{	  bentley:multidimensional:1975,
+  title		= {Multidimensional binary search trees used for associative
+		  searching},
+  author	= {Bentley, J. L.},
+  journal	= {Communications of the ACM},
+  volume	= {18},
+  number	= {9},
+  pages		= {509--517},
+  year		= {1975},
+  publisher	= {ACM}
 }
 
-@article{ojala:lbp:1996,
-  title={A comparative study of texture measures with classification based on featured distributions},
-  author={Ojala, T. and Pietik{\"a}inen, M. and Harwood, D.},
-  journal={Pattern Recognition},
-  volume={29},
-  number={1},
-  pages={51--59},
-  year={1996}
+@InProceedings{	  beyer:when:1999,
+  title		= {When is “nearest neighbor” meaningful?},
+  author	= {Beyer, K. and Goldstein, J. and Ramakrishnan, R. and
+		  Shaft, U.},
+  booktitle	= {Proceedings of the 7th International Conference on
+		  Database Theory},
+  pages		= {217--235},
+  year		= {1999}
 }
 
-@incollection{sivic:videogoogle:2006,
-  title={Video Google: Efficient visual search of videos},
-  author={Sivic, J. and Zisserman, A.},
-  booktitle={Toward Category-Level Object Recognition},
-  pages={127--144},
-  year={2006}
+@InProceedings{	  blanco:document:2005,
+  title		= {Document identifier reassignment through dimensionality
+		  reduction},
+  author	= {Blanco, Roi and Barreiro, {\'A}lvaro},
+  booktitle	= {European Conference on Information Retrieval},
+  pages		= {375--387},
+  year		= {2005},
+  organization	= {Springer}
 }
 
-@inproceedings{beyer:nnmeaningful:1999,
-  title={When is “nearest neighbor” meaningful?},
-  author={Beyer, K. and Goldstein, J. and Ramakrishnan, R. and Shaft, U.},
-  booktitle={Proceedings of the 7th International Conference on Database Theory},
-  pages={217--235},
-  year={1999}
+@Article{	  blanco:probabilistic:2010,
+  author	= "Roi Blanco and Alvaro Barreiro",
+  title		= "Probabilistic static pruning of inverted files",
+  journal	= " ACM Transactions on Information Systems ",
+  volume	= "28",
+  number	= "1",
+  month		= jan,
+  year		= "2010"
 }
 
-@inproceedings{hinneburg:whatisnn:2000,
-  title={What is the nearest neighbor in high dimensional spaces?},
-  author={Hinneburg, A. and Aggarwal, C. C. and Keim, D. A.},
-  booktitle={Proceedings of the 26th International Conference on Very Large Databases},
-  pages={506--515},
-  year={2000}
+@InProceedings{	  blandford:index:2002,
+  author	= {Blandford, D. and Blelloch, G.},
+  title		= {Index compression through document reordering},
+  booktitle	= {Proceedings of the 2002 Data Compression Conference},
+  pages		= {342--351},
+  year		= {2002}
 }
 
-@inproceedings{tunkelang:makingnn:2002,
-  title={Making the nearest neighbor meaningful},
-  author={Tunkelang, D.},
-  booktitle={SIAM Workshop on Clustering High Dimensional Data and its Applications},
-  year={2002}
+@InProceedings{	  boldi:mg4j:2005,
+  title		= "{M}{G}4{J} at {T}{R}{E}{C} 2005",
+  author	= "Paolo Boldi and Sebastiano Vigna",
+  year		= 2005,
+  booktitle	= "The Fourteenth Text REtrieval Conference (TREC 2005)
+		  Proceedings",
+  editor	= "Ellen M. Voorhees and Lori P. Buckland",
+  publisher	= "NIST",
+  series	= "Special Publications",
+  number	= "SP 500-266",
+  note		= "\texttt{\small http://mg4j.di.unimi.it/}"
 }
 
-@inproceedings{quack:cortina:2004,
-  title={Cortina: a system for large-scale, content-based web image retrieval},
-  author={Quack, Till and M{\"o}nich, Ullrich and Thiele, Lars and Manjunath, BS},
-  booktitle={Proceedings of the 12th annual ACM international conference on Multimedia},
-  pages={508--511},
-  year={2004},
-  organization={ACM}
+@Article{	  boldi:permuting:2009,
+  author	= "Boldi, P. and Santini, M. and Vigna, S.",
+  journal	= "Internet Mathematics.",
+  number	= "3",
+  pages		= "257--283",
+  title		= "Permuting web and social graphs",
+  volume	= "6",
+  year		= "2009"
 }
 
-@article{shete:contentbased:2012,
-  title={Content Based Image Retrieval},
-  author={Shete, Deepak S and Chavan, MS and Kolhapur, Kit},
-  journal={InternationalJournal of Emerging Technology and Advanced Engineering},
-  volume={2},
-  number={9},
-  pages={85--90},
-  year={2012}
+@Article{	  breiman:random:2001,
+  author	= "Breiman, Leo",
+  title		= "Random Forests",
+  journal	= "Machine Learning",
+  year		= "2001",
+  volume	= "45",
+  number	= "1",
+  pages		= "5--32",
+  abstract	= "Random forests are a combination of tree predictors such
+		  that each tree depends on the values of a random vector
+		  sampled independently and with the same distribution for
+		  all trees in the forest. The generalization error for
+		  forests converges a.s. to a limit as the number of trees in
+		  the forest becomes large. The generalization error of a
+		  forest of tree classifiers depends on the strength of the
+		  individual trees in the forest and the correlation between
+		  them. Using a random selection of features to split each
+		  node yields error rates that compare favorably to Adaboost
+		  (Y. Freund {\&} R. Schapire, Machine Learning: Proceedings
+		  of the Thirteenth International conference, ***, 148--156),
+		  but are more robust with respect to noise. Internal
+		  estimates monitor error, strength, and correlation and
+		  these are used to show the response to increasing the
+		  number of features used in the splitting. Internal
+		  estimates are also used to measure variable importance.
+		  These ideas are also applicable to regression.",
+  issn		= "1573-0565",
+  doi		= "10.1023/A:1010933404324",
+  url		= "http://dx.doi.org/10.1023/A:1010933404324"
 }
 
-@inproceedings{weber:quantitative:1998,
-  title={A quantitative analysis and performance study for similarity-search methods in high-dimensional spaces},
-  author={Weber, R. and Schek, H.-J. and Blott, S.},
-  booktitle={Proceedings of the 24th Very Large Data Bases Conference},
-  volume={98},
-  pages={194--205},
-  year={1998}
+@Article{	  brin:anatomy:1998,
+  author	= {Sergey Brin and Lawrence Page},
+  title		= {The Anatomy of a Large-Scale Hypertextual Web Search
+		  Engine},
+  journal	= {Computer Networks},
+  year		= {1998},
+  volume	= {30},
+  number	= {1-7},
+  pages		= {107--117},
+  url		= {http://dx.doi.org/10.1016/S0169-7552(98)00110-X},
+  doi		= {10.1016/S0169-7552(98)00110-X},
+  timestamp	= {Thu, 06 Nov 2014 01:39:54 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/cn/BrinP98},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@techreport{shaft:nearest:1998,
-  title={Nearest neighbor query performance for unstable distributions},
-  author={Shaft, U. and Goldstein, J. and Beyer, K.},
-  institution={Department of Computer Science, University of Wisconsin},
-  volume={1388},
-  year={1998}
+@Article{	  brin:reprint:2012,
+  title		= {Reprint of: The anatomy of a large-scale hypertextual web
+		  search engine},
+  author	= {Brin, S. and Page, L.},
+  journal	= {Computer Networks},
+  volume	= {56},
+  number	= {18},
+  pages		= {3825--3833},
+  year		= {2012}
 }
 
-@inproceedings{lacour:efficiency-comparison:2008,
-  title={Efficiency comparison of document matching techniques},
-  author={Lacour, Patrice and Macdonald, Craig and Ounis, Iadh},
-  booktitle={Efficiency Issues in Information Retrieval Workshop; European Conference for Information Retrieval},
-  pages={37--46},
-  year={2008}
+@InProceedings{	  broder:efficient:2003,
+  author	= {Broder, A. Z. and Carmel, D. and Herscovici, M. and
+		  Soffer, A. and Zien, J.},
+  title		= {Efficient query evaluation using a two-level retrieval
+		  process},
+  booktitle	= {\cikm{12th}},
+  year		= {2003},
+  pages		= {426--434},
+  numpages	= {9}
 }
 
-@article{brin:largescale:2012,
-  title={Reprint of: The anatomy of a large-scale hypertextual web search engine},
-  author={Brin, S. and Page, L.},
-  journal={Computer Networks},
-  volume={56},
-  number={18},
-  pages={3825--3833},
-  year={2012}
+@Article{	  broschart:high-performance:2012,
+  author	= {Andreas Broschart and Ralf Schenkel},
+  title		= {High-performance processing of text queries with tunable
+		  pruned term and term pair indexes},
+  journal	= {{ACM} Trans. Inf. Syst.},
+  year		= {2012},
+  volume	= {30},
+  number	= {1},
+  pages		= {5},
+  url		= {http://doi.acm.org/10.1145/2094072.2094077},
+  doi		= {10.1145/2094072.2094077},
+  timestamp	= {Sat, 08 Nov 2014 18:45:49 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/tois/BroschartS12},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@article{zobel:inverted:1998,
-  title={Inverted files versus signature files for text indexing},
-  author={Zobel, J. and Moffat, A. and Ramamohanarao, K.},
-  journal={ACM Transactions on Database Systems (TODS)},
-  volume={23},
-  number={4},
-  pages={453--490},
-  year={1998}
+@InProceedings{	  buttcher:document-centric:2006,
+  author	= {Stefan B{\"{u}}ttcher and Charles L. A. Clarke},
+  title		= {A document-centric approach to static index pruning in
+		  text retrieval systems},
+  booktitle	= {Proc.\ of the 15th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2006},
+  url		= {http://doi.acm.org/10.1145/1183614.1183644},
+  doi		= {10.1145/1183614.1183644},
+  timestamp	= {Sun, 09 Nov 2014 01:31:34 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/ButtcherC06},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@misc{harman:inverted:1992,
-  title={Inverted files},
-  author={Harman, D. and Fox, E. and Baeza-Yates, R. and Lee, W.},
-  year={1992},
-  url={http://orion.lcg.ufrj.br/Dr.Dobbs/books/book5/chap03.htm}
+@Misc{		  callan:clueweb09:2009,
+  title		= {Clueweb09 data set},
+  author	= {Callan, J. and Hoy, M. and Yoo, C. and Zhao, L.},
+  year		= {2009},
+  url		= {http://lemurproject.org/clueweb09/}
 }
 
-@inproceedings{roussopoulos:nearest:1995,
-  title={Nearest neighbor queries},
-  author={Roussopoulos, N. and Kelley, S. and Vincent, F.},
-  booktitle={Proceedings of the 1995 ACM SIGMOD International Conference On Management of Data},
-  volume={24},
-  number={2},
-  pages={71--79},
-  year={1995}
+@InProceedings{	  callan:searching:1995,
+  title		= {Searching distributed collections with inference
+		  networks},
+  author	= {Callan, James P and Lu, Zhihong and Croft, W Bruce},
+  booktitle	= {Proceedings of the 18th annual international ACM SIGIR
+		  conference on Research and development in information
+		  retrieval},
+  pages		= {21--28},
+  year		= {1995},
+  organization	= {ACM}
 }
 
-@article{bentley:kd:1975,
-  title={Multidimensional binary search trees used for associative searching},
-  author={Bentley, J. L.},
-  journal={Communications of the ACM},
-  volume={18},
-  number={9},
-  pages={509--517},
-  year={1975},
-  publisher={ACM}
+@InCollection{	  callan:distributed:2002,
+  title		= {Distributed information retrieval},
+  author	= {Callan, Jamie},
+  booktitle	= {Advances in information retrieval},
+  pages		= {127--150},
+  year		= {2002},
+  publisher	= {Springer}
 }
 
-@inproceedings{lazebnik:beyond:2006,
-  title={Beyond bags of features: Spatial pyramid matching for recognizing natural scene categories},
-  author={Lazebnik, S. and Schmid, C. and Ponce, J.},
-  booktitle={2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
-  volume={2},
-  pages={2169--2178},
-  year={2006}
+@InProceedings{	  cambazoglu:early:2010,
+  author	= {Berkant Barla Cambazoglu and Hugo Zaragoza and Olivier
+		  Chapelle and Jiang Chen and Ciya Liao and Zhaohui Zheng and
+		  Jon Degenhardt},
+  title		= {Early exit optimizations for additive machine learned
+		  ranking systems},
+  booktitle	= {Proc.\ of the Third Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2010},
+  url		= {http://doi.acm.org/10.1145/1718487.1718538},
+  doi		= {10.1145/1718487.1718538},
+  timestamp	= {Mon, 03 Nov 2014 17:39:29 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/wsdm/CambazogluZCCLZD10},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@techreport{zhang:local:2005,
-  title={Local features and kernels for classification of texture and object categories: An in-depth study},
-  author={Zhang, J. and Marsza{\l}ek, M. and Lazebnik, S. and Schmid, C.},
-  year={2005},
-  type = {Research Report},
-  number = {RR-5737},
-  pages = {39},
-  institution = {INRIA}
+@InProceedings{	  cambazoglu:quantifying:2009,
+  title		= {Quantifying performance and quality gains in distributed
+		  web search engines},
+  author	= {Cambazoglu, B Barla and Plachouras, Vassilis and
+		  Baeza-Yates, Ricardo},
+  booktitle	= {Proceedings of the 32nd international ACM SIGIR conference
+		  on Research and development in information retrieval},
+  pages		= {411--418},
+  year		= {2009},
+  organization	= {ACM}
 }
 
-@inproceedings{vigna:quasi:2013,
-  title={Quasi-succinct indices},
-  author={Vigna, S.},
-  booktitle={\wsdm{6th}},
-  pages={83--92},
-  year={2013}
+@InCollection{	  castellanos:hotminer:2004,
+  title		= {Hotminer: Discovering hot topics from dirty text},
+  author	= {Castellanos, Mal{\'u}},
+  booktitle	= {Survey of Text Mining},
+  pages		= {123--157},
+  year		= {2004},
+  publisher	= {Springer}
 }
 
-@inproceedings{risvik:multi:2003,
-  title={Multi-Tier Architecture for Web Search Engines.},
-  author={Risvik, Knut Magne and Aasheim, Yngve and Lidal, Mathias},
-  booktitle={LA-WEB},
-  volume={3},
-  pages={132},
-  year={2003}
+@InProceedings{	  chakrabarti:interval-based:2011,
+  author	= {Kaushik Chakrabarti and Surajit Chaudhuri and Venkatesh
+		  Ganti},
+  title		= {Interval-based pruning for top-k processing over
+		  compressed lists},
+  booktitle	= {Proc.\ of the 27th Int.\ Conf.\ on Data Engineering},
+  year		= {2011},
+  ee		= {http://doi.ieeecomputersociety.org/10.1109/ICDE.2011.5767855},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{baeza:efficiency:2009,
-  title={Efficiency trade-offs in two-tier web search systems},
-  author={Baeza-Yates, Ricardo and Murdock, Vanessa and Hauff, Claudia},
-  booktitle={Proceedings of the 32nd international ACM SIGIR conference on Research and development in information retrieval},
-  pages={163--170},
-  year={2009},
-  organization={ACM}
+@InProceedings{	  chaudhuri:heavy-tailed:2007,
+  author	= {Surajit Chaudhuri and Kenneth Ward Church and Arnd
+		  Christian K{\"{o}}nig and Liying Sui},
+  title		= {Heavy-tailed distributions and multi-keyword queries},
+  booktitle	= {Proc.\ of the 30th Annual Int.\ ACM SIGIR Conf},
+  year		= {2007},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{wang:cascade:2011,
- author = {Wang, L. and Lin, J. and Metzler, D.},
- title = {A cascade ranking model for efficient ranked retrieval},
- booktitle = {\sigir{34th}},
- year = {2011},
- pages = {105--114},
- numpages = {10}
+@InProceedings{	  chierichetti:on:2009,
+  author	= {Chierichetti, F. and Kumar, R. and Lattanzi, S. and
+		  Mitzenmacher, M. and Panconesi, A. and Raghavan, P.},
+  title		= {On compressing social networks},
+  booktitle	= {Proceedings of the 15th ACM SIGKDD International
+		  Conference on Knowledge Discovery and Data Mining},
+  year		= {2009}
 }
 
-@inproceedings{liu:ssd:2016,
-  title={SSD: Single shot multibox detector},
-  author={Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and Reed, S. and Fu, C.-Y. and Berg, A. C.},
-  booktitle={Proceedings of the 14th European Conference on Computer Vision},
-  pages={21--37},
-  year={2016}
+@InProceedings{	  chougrad:soft:2015,
+  author	= {H. Chougrad and H. Zouaki and O. Alheyane},
+  booktitle	= {2015 10th International Conference on Intelligent Systems:
+		  Theories and Applications (SITA)},
+  title		= {Soft assignment vs hard assignment coding for bag of
+		  visual words},
+  year		= {2015},
+  volume	= {},
+  number	= {},
+  pages		= {},
+  keywords	= {image classification;image coding;image
+		  representation;image retrieval;bag-of-visual word;hard
+		  assignment coding;image classification;image
+		  representation;image retrieval;machine level language;soft
+		  assignment coding;soft-assignment technique;vector
+		  quantization process;Encoding;Feature extraction;Image
+		  coding;Support vector
+		  machines;Testing;Training;Visualization;bag of visual
+		  words;image classification;locality-constrained linear
+		  coding;pooling;soft-assignment},
+  issn		= {},
+  month		= {Oct}
 }
 
-@article{fagin:optimal:2003,
-  title={Optimal aggregation algorithms for middleware},
-  author={Fagin, R. and Lotem, A. and Naor, M.},
-  journal={Journal of computer and system sciences},
-  volume={66},
-  number={4},
-  pages={614--656},
-  year={2003}
+@Article{	  cormack:efficient:2011,
+  author	= {Gordon V. Cormack and Mark D. Smucker and Charles L. A.
+		  Clarke},
+  title		= {Efficient and effective spam filtering and re-ranking for
+		  large web datasets},
+  journal	= {Inf. Retr.},
+  volume	= {14},
+  number	= {5},
+  year		= {2011},
+  pages		= {441-465},
+  ee		= {http://dx.doi.org/10.1007/s10791-011-9162-z},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@unpublished{pibiri:compression,
-  title={Inverted Index Compression},
-  author={Pibiri, Giulio Ermanno and Venturini, Rossano},
-  note={Unpublished manuscript},
-  year={2017}
+@Article{	  cornacchia:flexible:2008,
+  author	= {Roberto Cornacchia and S{\'a}ndor H{\'e}man and Marcin
+		  Zukowski and Arjen P. de Vries and Peter A. Boncz},
+  title		= {Flexible and efficient IR using array databases},
+  journal	= {VLDB J.},
+  volume	= {17},
+  number	= {1},
+  year		= {2008},
+  pages		= {151-168},
+  ee		= {http://dx.doi.org/10.1007/s00778-007-0071-0},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@inproceedings{jia:efficient:2010,
-  title={Efficient accumulator initialisation},
-  author={Jia, X.-F. and Trotman, A. and O’Keefe, R.},
-  booktitle={Proceedings of the 15th Australasian Document Computing Symposium},
-  pages={44--51},
-  year={2010}
+@InProceedings{	  crane:comparison:2017,
+  title		= {A comparison of document-at-a-time and score-at-a-time
+		  query evaluation},
+  author	= {Crane, M. and Culpepper, J. S. and Lin, J. and Mackenzie,
+		  J. and Trotman, A.},
+  booktitle	= {\wsdm{10th}},
+  pages		= {201--210},
+  year		= {2017}
 }
 
-@inproceedings{philbin:lost:2008,
-  title={Lost in quantization: Improving particular object retrieval in large scale image databases},
-  author={Philbin, J. and Chum, O. and Isard, M. and Sivic, J. and Zisserman, A.},
-  booktitle={2008 IEEE Conference on Computer Vision and Pattern Recognition},
-  pages={1--8},
-  year={2008}
+@InProceedings{	  dang:query:2010,
+  author	= {Van Dang and W. Bruce Croft},
+  title		= {Query reformulation using anchor text},
+  booktitle	= {Proc.\ of the Third Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2010},
+  pages		= {41-50},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
 }
 
-@article{robertson:okapi:1995,
-  title={Okapi at TREC-3},
-  author={Robertson, Stephen E and Walker, Steve and Jones, Susan and Hancock-Beaulieu, Micheline M and Gatford, Mike and others},
-  journal={Nist Special Publication Sp},
-  volume={109},
-  pages={109},
-  year={1995},
-  publisher={NATIONAL INSTIUTE OF STANDARDS \& TECHNOLOGY}
+@InProceedings{	  dang:two-stage:2013,
+  author	= {Van Dang and Michael Bendersky and W. Bruce Croft},
+  title		= {Two-Stage Learning to Rank for Information Retrieval},
+  booktitle	= {Proc.\ of the 35th European Conf.\ on Information
+		  Retrieval},
+  year		= {2013},
+  url		= {http://dx.doi.org/10.1007/978-3-642-36973-5_36},
+  doi		= {10.1007/978-3-642-36973-5_36},
+  timestamp	= {Mon, 03 Nov 2014 17:46:54 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/ecir/DangBC13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{wang:learning:2010,
- author = {Wang, L. and Lin, J. and Metzler, D.},
- title = {Learning to efficiently rank},
- booktitle = {\sigir{33rd}},
- year = {2010},
- pages = {138--145},
- numpages = {8}
+@InProceedings{	  dean:challenges:2009,
+  author	= { Jeffrey Dean},
+  title		= {Challenges in building large-scale information retrieval
+		  systems},
+  booktitle	= {Proceedings of the Second ACM International Conference on
+		  Web Search and Data Mining },
+  year		= {2009}
 }
 
-@article{liu:learning:2009,
- author = {Liu, T.-Y.},
- title = {Learning to rank for information retrieval},
- journal = {Foundations and Trends in Information Retrieval},
- volume = {3},
- number = {3},
- year = {2009},
- pages = {225--331},
- numpages = {107}
+@InProceedings{	  dhillon:information-theoretic:2003,
+  title		= {Information-theoretic co-clustering},
+  author	= {Dhillon, Inderjit S and Mallela, Subramanyam and Modha,
+		  Dharmendra S},
+  booktitle	= {Proceedings of the ninth ACM SIGKDD international
+		  conference on Knowledge discovery and data mining},
+  pages		= {89--98},
+  year		= {2003},
+  organization	= {ACM}
 }
 
-@misc{callan:clueweb:2009,
-  title={Clueweb09 data set},
-  author={Callan, J. and Hoy, M. and Yoo, C. and Zhao, L.},
-  year={2009},
-  url={http://lemurproject.org/clueweb09/}
+@InProceedings{	  dimopoulos:candidate:2013,
+  author	= {Constantinos Dimopoulos and Sergey Nepomnyachiy and
+		  Torsten Suel},
+  title		= {A candidate filtering mechanism for fast top-k query
+		  processing on modern cpus},
+  booktitle	= {Proc.\ of the 36th Int.\ ACM SIGIR Conf},
+  year		= {2013},
+  url		= {http://doi.acm.org/10.1145/2484028.2484087},
+  doi		= {10.1145/2484028.2484087},
+  timestamp	= {Fri, 07 Nov 2014 01:58:10 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/sigir/DimopoulosNS13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{lin:toward:2016,
-  title={Toward reproducible baselines: The open-source IR reproducibility challenge},
-  author={Lin, J. and Crane, M. and Trotman, A. and Callan, J. and Chattopadhyaya, I. and Foley, J. and Ingersoll, G. and Macdonald, C. and Vigna, S.},
-  booktitle={Proceedings of the 38th European Conference on IR Research},
-  pages={408--420},
-  year={2016}
+@InProceedings{	  dimopoulos:optimizing:2013,
+  title		= {Optimizing top-k document retrieval strategies for
+		  block-max indexes},
+  author	= {Dimopoulos, C. and Nepomnyachiy, S. and Suel, T.},
+  booktitle	= {\wsdm{6th}},
+  pages		= {113--122},
+  year		= {2013}
 }
 
-@article{persin:filtered:1996,
-  title={Filtered document retrieval with frequency-sorted indexes},
-  author={Persin, M. and Zobel, J. and Sacks-Davis, R.},
-  journal={Journal of the American Society for Information Science},
-  volume={47},
-  number={10},
-  pages={749--764},
-  year={1996}
+@InProceedings{	  ding:faster:2011,
+  title		= {Faster top-k document retrieval using block-max indexes},
+  author	= {Ding, S. and Suel, T.},
+  booktitle	= {\sigir{34th}},
+  pages		= {993--1002},
+  year		= {2011}
 }
 
-@inproceedings{crane:comparison:2017,
-  title={A comparison of document-at-a-time and score-at-a-time query evaluation},
-  author={Crane, M. and Culpepper, J. S. and Lin, J. and Mackenzie, J. and Trotman, A.},
-  booktitle={\wsdm{10th}},
-  pages={201--210},
-  year={2017}
+@InProceedings{	  ding:scalable:2010,
+  author	= {Ding, S. and Attenberg, J. and Suel, T.},
+  title		= {Scalable techniques for document identifier assignment in
+		  inverted indexes},
+  booktitle	= {Proceedings of the 19th International Conference on World
+		  Wide Web},
+  year		= {2010}
 }
 
-@inproceedings{mackenzie:early:2017,
-  title={Early termination heuristics for score-at-a-time index traversal},
-  author={Mackenzie, J. and Scholer, F. and Culpepper, J. S.},
-  booktitle={Proceedings of the 22nd Australasian Document Computing Symposium},
-  year={2017}
+@InProceedings{	  donmez:on:2009,
+  author	= {Pinar Donmez and Krysta Marie Svore and Christopher J. C.
+		  Burges},
+  title		= {On the local optimality of LambdaRank},
+  booktitle	= {Proc.\ of the 32th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2009},
+  url		= {http://doi.acm.org/10.1145/1571941.1572021},
+  doi		= {10.1145/1571941.1572021},
+  timestamp	= {Fri, 07 Nov 2014 18:35:13 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/sigir/DonmezSB09},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
 }
 
-@inproceedings{strohman:efficient:2007,
- author = {Strohman, T. and Croft, W. B.},
- title = {Efficient document retrieval in main memory},
- booktitle = {\sigir{30th}},
- year = {2007},
- pages = {175--182},
- numpages = {8}
+@Article{	  duda:asymmetric:2013,
+  author	= {J. Duda},
+  title		= {Asymmetric numeral systems as close to capacity low state
+		  entropy coders},
+  journal	= {CoRR},
+  volume	= {abs/1311.2540},
+  year		= {2013},
+  url		= {http://arxiv.org/abs/1311.2540},
+  archiveprefix	= {arXiv},
+  eprint	= {1311.2540}
 }
 
-@inproceedings{anh:pruned:2006,
-  title={Pruned query evaluation using pre-computed impacts},
-  author={Anh, V. N. and Moffat, A.},
-  booktitle={\sigir{29th}},
-  pages={372--379},
-  year={2006}
+@InProceedings{	  elbagoury:rank-at-a-time:2016,
+  author	= {Elbagoury, A. and Crane, M. and Lin, J.},
+  title		= {Rank-at-a-time query processing},
+  booktitle	= {Proceedings of the 2016 ACM International Conference on
+		  the Theory of Information Retrieval},
+  year		= {2016},
+  pages		= {229--232},
+  numpages	= {4}
 }
 
-@inproceedings{wang:fast:2016,
-  title={Fast first-phase candidate generation for cascading rankers},
-  author={Wang, Q. and Dimopoulos, C. and Suel, T.},
-  booktitle={\sigir{39th}},
-  pages={295--304},
-  year={2016}
+@Article{	  elias:universal:2006,
+  author	= {Elias, P.},
+  title		= {Universal Codeword Sets and Representations of the
+		  Integers},
+  journal	= {IEEE Trans. Inf. Theor.},
+  issue_date	= {March 1975},
+  volume	= {21},
+  number	= {2},
+  month		= sep,
+  year		= {2006},
+  issn		= {0018-9448},
+  pages		= {},
+  numpages	= {10},
+  acmid		= {2268815},
+  publisher	= {IEEE Press},
+  address	= {Piscataway, NJ, USA}
+}
+
+@Article{	  fagin:optimal:2003,
+  title		= {Optimal aggregation algorithms for middleware},
+  author	= {Fagin, R. and Lotem, A. and Naor, M.},
+  journal	= {Journal of computer and system sciences},
+  volume	= {66},
+  number	= {4},
+  pages		= {614--656},
+  year		= {2003}
+}
+
+@InProceedings{	  fagin:static:2001,
+  author	= {R. Fagin and D. Carmel and D. Cohen and E. Farchi and M.
+		  Herscovici and Y. Maarek and A. Soffer},
+  title		= {Static index pruning for information retrieval systems},
+  booktitle	= {Proc.\ of the 24th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2001}
+}
+
+@Article{	  fagin:combining:2002,
+  author	= {Ronald Fagin},
+  title		= {Combining Fuzzy Information: an Overview},
+  journal	= {SIGMOD Record},
+  year		= {2002},
+  volume	= {31},
+  pages		= {2002}
+}
+
+@Article{	  fagni:boosting:2006,
+  author	= {Tiziano Fagni and Raffaele Perego and Fabrizio Silvestri
+		  and Salvatore Orlando},
+  title		= {Boosting the performance of Web search engines: Caching
+		  and prefetching query results by exploiting historical
+		  usage data},
+  journal	= {{ACM} Trans. Inf. Syst.},
+  volume	= {24},
+  number	= {1},
+  pages		= {51--78},
+  year		= {2006},
+  timestamp	= {Tue, 06 Mar 2007 08:54:15 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/tois/FagniPSO06},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  ferragina:on:2010,
+  author	= {Ferragina, P. and Manzini, G.},
+  title		= {On compressing the textual web},
+  booktitle	= {Proceedings of the 3rd ACM International Conference on Web
+		  Search and Data Mining},
+  year		= {2010},
+  pages		= {391--400},
+  numpages	= {10}
+}
+
+@Article{	  fischler:random:1981,
+  author	= {Fischler, M. A. and Bolles, R. C.},
+  title		= {Random sample consensus: a paradigm for model fitting with
+		  applications to image analysis and automated cartography},
+  journal	= {Readings in Computer Vision},
+  issue_date	= {June 1981},
+  volume	= {24},
+  number	= {6},
+  month		= jun,
+  year		= {1981},
+  pages		= {726--740},
+  numpages	= {15}
+}
+
+@InProceedings{	  fontoura:efficiently:2011,
+  author	= {Marcus Fontoura and Maxim Gurevich and Vanja Josifovski
+		  and Sergei Vassilvitskii},
+  title		= {Efficiently encoding term co-occurrences in inverted
+		  indexes},
+  booktitle	= {Proc.\ of the 20th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2011},
+  url		= {http://doi.acm.org/10.1145/2063576.2063626},
+  doi		= {10.1145/2063576.2063626},
+  timestamp	= {Sat, 08 Nov 2014 19:11:23 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/FontouraGJV11},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  garcia:access-ordered:2004,
+  title		= {Access-ordered indexes},
+  author	= {Garcia, Steven and Williams, Hugh E and Cannane, Adam},
+  booktitle	= {Proceedings of the 27th Australasian conference on
+		  Computer science-Volume 26},
+  pages		= {7--14},
+  year		= {2004},
+  organization	= {Australian Computer Society, Inc.}
+}
+
+@InProceedings{	  goel:predictive:2008,
+  author	= {Sharad Goel and John Langford and Alexander L. Strehl},
+  title		= {Predictive Indexing for Fast Search},
+  booktitle	= {Proc.\ of the 22nd Annual Conf.\ on Neural Information
+		  Processing Systems, Vancouver},
+  year		= {2008},
+  url		= {http://books.nips.cc/papers/files/nips21/NIPS2008_0840.pdf},
+  timestamp	= {Mon, 10 Nov 2014 02:18:45 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/nips/GoelLS08},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  gravano:generalizing:1999,
+  title		= {Generalizing GlOSS to vector-space databases and broker
+		  hierarchies},
+  author	= {Gravano, Luis and Garcia-Molina, Hector},
+  year		= {1999},
+  publisher	= {Stanford InfoLab}
+}
+
+@Article{	  gupta:information:2015,
+  author	= {Manish Gupta and Michael Bendersky},
+  title		= {Information Retrieval with Verbose Queries},
+  journal	= {Foundations and Trends in Information Retrieval},
+  year		= {2015},
+  volume	= {9},
+  number	= {3-4},
+  pages		= {209-354}
+}
+
+@Misc{		  harman:inverted:1992,
+  title		= {Inverted files},
+  author	= {Harman, D. and Fox, E. and Baeza-Yates, R. and Lee, W.},
+  year		= {1992},
+  url		= {http://orion.lcg.ufrj.br/Dr.Dobbs/books/book5/chap03.htm}
+}
+
+@InProceedings{	  hinneburg:what:2000,
+  title		= {What is the nearest neighbor in high dimensional spaces?},
+  author	= {Hinneburg, A. and Aggarwal, C. C. and Keim, D. A.},
+  booktitle	= {Proceedings of the 26th International Conference on Very
+		  Large Databases},
+  pages		= {506--515},
+  year		= {2000}
+}
+
+@Article{	  holloway:read-optimized:2008,
+  author	= {Holloway, A. L. and DeWitt, D. J.},
+  title		= {Read-optimized databases, in depth},
+  journal	= {Proceedings of the VLDB Endowment},
+  issue_date	= {August 2008},
+  volume	= {1},
+  number	= {1},
+  pages		= {502--513},
+  year		= {2008}
+}
+
+@InProceedings{	  huston:evaluating:2010,
+  author	= {Huston, S. and Croft, W. B.},
+  title		= {Evaluating verbose query processing techniques},
+  booktitle	= {\sigir{33rd}},
+  year		= {2010},
+  pages		= {291--298},
+  numpages	= {8}
+}
+
+@Article{	  hwang:optimizing:2007,
+  author	= {Seung{-}won Hwang and Kevin Chen{-}Chuan Chang},
+  title		= {Optimizing top-k queries for middleware access: {A}
+		  unified cost-based approach},
+  journal	= {{ACM} Trans. Database Syst.},
+  volume	= {32},
+  number	= {1},
+  pages		= {5},
+  year		= {2007},
+  url		= {http://doi.acm.org/10.1145/1206049.1206054},
+  doi		= {10.1145/1206049.1206054},
+  timestamp	= {Mon, 11 Jun 2007 14:34:07 +0200},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/tods/HwangC07},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  ilyas:survey:2008,
+  author	= {Ihab F. Ilyas and George Beskales and Mohamed A. Soliman},
+  title		= {A survey of top-\emph{k} query processing techniques in
+		  relational database systems},
+  journal	= {{ACM} Comput. Surv.},
+  volume	= {40},
+  number	= {4},
+  year		= {2008},
+  url		= {http://doi.acm.org/10.1145/1391729.1391730},
+  doi		= {10.1145/1391729.1391730},
+  timestamp	= {Mon, 03 Nov 2008 16:10:28 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/csur/IlyasBS08},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  jardine:use:1971,
+  title		= "The use of hierarchic clustering in information retrieval",
+  journal	= "Information Storage and Retrieval",
+  volume	= "7",
+  number	= "5",
+  pages		= "217 - 240",
+  year		= "1971",
+  note		= "",
+  issn		= "0020-0271",
+  doi		= "http://dx.doi.org/10.1016/0020-0271(71)90051-9",
+  url		= "http://www.sciencedirect.com/science/article/pii/0020027171900519",
+  author	= "N. Jardine and C.J. van Rijsbergen"
+}
+
+@InProceedings{	  jia:efficient:2010,
+  title		= {Efficient accumulator initialisation},
+  author	= {Jia, X.-F. and Trotman, A. and O’Keefe, R.},
+  booktitle	= {Proceedings of the 15th Australasian Document Computing
+		  Symposium},
+  pages		= {44--51},
+  year		= {2010}
+}
+
+@InProceedings{	  jiang:towards:2007,
+  title		= {Towards optimal bag-of-features for object categorization
+		  and semantic video retrieval},
+  author	= {Jiang, Y.-G. and Ngo, C.-W. and Yang, J.},
+  booktitle	= {Proceedings of the 6th ACM international Conference on
+		  Image and Video Retrieval},
+  pages		= {494--501},
+  year		= {2007}
+}
+
+@InProceedings{	  jonassen:efficient:2011,
+  author	= {Simon Jonassen and Svein Erik Bratsberg},
+  title		= {Efficient Compressed Inverted Index Skipping for
+		  Disjunctive Text-Queries},
+  booktitle	= {Proc.\ of the 33th European Conf.\ on Information
+		  Retrieval},
+  year		= {2011},
+  ee		= {http://dx.doi.org/10.1007/978-3-642-20161-5_53},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{	  kaszkiel:term-ordered:1998,
+  author	= {Kaszkiel, M. and Zobel, J.},
+  title		= {Term-ordered query evaluation versus document-ordered
+		  query evaluation for large document databases},
+  booktitle	= {\sigir{21th}},
+  year		= {1998},
+  pages		= {343--344},
+  numpages	= {2}
+}
+
+@Article{	  kleinberg:authoritative:1999,
+  title		= {Authoritative sources in a hyperlinked environment},
+  author	= {Kleinberg, Jon M},
+  journal	= {Journal of the ACM (JACM)},
+  volume	= {46},
+  number	= {5},
+  pages		= {604--632},
+  year		= {1999},
+  publisher	= {ACM}
+}
+
+@InProceedings{	  kulkarni:document:2010,
+  title		= {Document allocation policies for selective searching of
+		  distributed indexes},
+  author	= {Kulkarni, Anagha and Callan, Jamie},
+  booktitle	= {Proceedings of the 19th ACM international conference on
+		  Information and knowledge management},
+  pages		= {449--458},
+  year		= {2010},
+  organization	= {ACM}
+}
+
+@Article{	  kulkarni:selective:2015,
+  title		= {Selective search: Efficient and effective search of large
+		  textual collections},
+  author	= {Kulkarni, Anagha and Callan, Jamie},
+  journal	= {ACM Transactions on Information Systems (TOIS)},
+  volume	= {33},
+  number	= {4},
+  pages		= {17},
+  year		= {2015},
+  publisher	= {ACM}
+}
+
+@InProceedings{	  kulkarni:shard:2012,
+  title		= {Shard ranking and cutoff estimation for topically
+		  partitioned collections},
+  author	= {Kulkarni, Anagha and Tigelaar, Almer S and Hiemstra,
+		  Djoerd and Callan, Jamie},
+  booktitle	= {Proceedings of the 21st ACM international conference on
+		  Information and knowledge management},
+  pages		= {555--564},
+  year		= {2012},
+  organization	= {ACM}
+}
+
+@InProceedings{	  kulkarni:topic-based:2010,
+  title		= {Topic-based index partitions for efficient and effective
+		  selective search},
+  author	= {Kulkarni, Anagha and Callan, Jamie},
+  booktitle	= {SIGIR 2010 Workshop on Large-Scale Distributed Information
+		  Retrieval},
+  pages		= {19--24},
+  year		= {2010}
+}
+
+@PhDThesis{	  kulkarni:efficient:2013,
+  title		= {Efficient and effective large-scale search},
+  author	= {Kulkarni, Anagha},
+  year		= {2013},
+  school	= {Citeseer}
+}
+
+@InBook{	  kulkarni:shrkc:2015,
+  author	= "Kulkarni, Anagha",
+  title		= "ShRkC: Shard Rank Cutoff Prediction for Selective Search",
+  booktitle	= "String Processing and Information Retrieval: 22nd
+		  International Symposium, SPIRE 2015, London, UK, September
+		  1-4, 2015, Proceedings",
+  year		= "2015",
+  publisher	= "Springer International Publishing",
+  address	= "Cham",
+  pages		= "337--349",
+  isbn		= "978-3-319-23826-5",
+  doi		= "10.1007/978-3-319-23826-5_32",
+  url		= "http://dx.doi.org/10.1007/978-3-319-23826-5_32"
+}
+
+@Article{	  kullback:on:1951,
+  title		= {On information and sufficiency},
+  author	= {Kullback, Solomon and Leibler, Richard A},
+  journal	= {The annals of mathematical statistics},
+  volume	= {22},
+  number	= {1},
+  pages		= {79--86},
+  year		= {1951},
+  publisher	= {JSTOR}
+}
+
+@InProceedings{	  kumar:top-k:2009,
+  author	= {Ravi Kumar and Kunal Punera and Torsten Suel and Sergei
+		  Vassilvitskii},
+  title		= {Top-\emph{k} aggregation using intersections of ranked
+		  inputs},
+  booktitle	= {Proc.\ of the Second Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2009},
+  url		= {http://doi.acm.org/10.1145/1498759.1498830},
+  doi		= {10.1145/1498759.1498830},
+  timestamp	= {Sat, 08 Nov 2014 19:07:21 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/wsdm/KumarPSV09},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  lacour:efficiency:2008,
+  title		= {Efficiency comparison of document matching techniques},
+  author	= {Lacour, Patrice and Macdonald, Craig and Ounis, Iadh},
+  booktitle	= {Efficiency Issues in Information Retrieval Workshop;
+		  European Conference for Information Retrieval},
+  pages		= {37--46},
+  year		= {2008}
+}
+
+@InProceedings{	  lazebnik:beyond:2006,
+  title		= {Beyond bags of features: Spatial pyramid matching for
+		  recognizing natural scene categories},
+  author	= {Lazebnik, S. and Schmid, C. and Ponce, J.},
+  booktitle	= {2006 IEEE Computer Society Conference on Computer Vision
+		  and Pattern Recognition},
+  volume	= {2},
+  pages		= {2169--2178},
+  year		= {2006}
+}
+
+@Article{	  lemire:decoding:2012,
+  author	= {Daniel Lemire and Leonid Boytsov},
+  title		= {Decoding billions of integers per second through
+		  vectorization},
+  journal	= {CoRR},
+  year		= {2012},
+  volume	= {abs/1209.2137},
+  url		= {http://arxiv.org/abs/1209.2137},
+  timestamp	= {Sun, 09 Nov 2014 09:55:50 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/corr/abs-1209-2137},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  lemire:reordering:2011,
+  author	= {D. Lemire and O. Kaser},
+  title		= {Reordering columns for smaller indexes},
+  journal	= {Information Sciences},
+  volume	= {181},
+  number	= {12},
+  pages		= {2550--2570},
+  year		= {2011}
+}
+
+@Book{		  li:learning:2011,
+  author	= {Hang Li},
+  title		= {Learning to Rank for Information Retrieval and Natural
+		  Language Processing},
+  series	= {Synthesis Lectures on Human Language Technologies},
+  year		= {2011},
+  publisher	= {Morgan {\&} Claypool Publishers},
+  url		= {http://dx.doi.org/10.2200/S00348ED1V01Y201104HLT012},
+  doi		= {10.2200/S00348ED1V01Y201104HLT012},
+  timestamp	= {Wed, 05 Nov 2014 22:11:07 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/series/synthesis/2011Li},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  lin:anytime:2015,
+  title		= {Anytime ranking for impact-ordered indexes},
+  author	= {Lin, J. and Trotman, A.},
+  booktitle	= {Proceedings of the 2015 International Conference on The
+		  Theory of Information Retrieval},
+  pages		= {301--304},
+  year		= {2015}
+}
+
+@InProceedings{	  lin:toward:2016,
+  title		= {Toward reproducible baselines: The open-source IR
+		  reproducibility challenge},
+  author	= {Lin, J. and Crane, M. and Trotman, A. and Callan, J. and
+		  Chattopadhyaya, I. and Foley, J. and Ingersoll, G. and
+		  Macdonald, C. and Vigna, S.},
+  booktitle	= {Proceedings of the 38th European Conference on IR
+		  Research},
+  pages		= {408--420},
+  year		= {2016}
+}
+
+@InProceedings{	  liu:ssd:2016,
+  title		= {SSD: Single shot multibox detector},
+  author	= {Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and
+		  Reed, S. and Fu, C.-Y. and Berg, A. C.},
+  booktitle	= {Proceedings of the 14th European Conference on Computer
+		  Vision},
+  pages		= {21--37},
+  year		= {2016}
+}
+
+@Article{	  liu:image:2013,
+  author	= {J. Liu},
+  title		= {Image retrieval based on bag-of-words model},
+  journal	= {CoRR},
+  volume	= {abs/1304.5168},
+  year		= {2013},
+  url		= {http://arxiv.org/abs/1304.5168},
+  archiveprefix	= {arXiv}
+}
+
+@Article{	  liu:image:2013*1,
+  title		= {Image retrieval based on bag-of-words model},
+  author	= {Liu, J.},
+  journal	= {arXiv preprint arXiv:1304.5168},
+  year		= {2013}
+}
+
+@Article{	  liu:learning:2009,
+  author	= {Liu, T.-Y.},
+  title		= {Learning to rank for information retrieval},
+  journal	= {Foundations and Trends in Information Retrieval},
+  volume	= {3},
+  number	= {3},
+  year		= {2009},
+  pages		= {225--331},
+  numpages	= {107}
+}
+
+@Article{	  lloyd:least:1982,
+  title		= {Least squares quantization in PCM},
+  author	= {Lloyd, Stuart},
+  journal	= {IEEE transactions on information theory},
+  volume	= {28},
+  number	= {2},
+  pages		= {129--137},
+  year		= {1982},
+  publisher	= {IEEE}
+}
+
+@InProceedings{	  long:optimized:2003,
+  author	= {X. Long and T. Suel},
+  title		= {Optimized Query Execution in Large Search Engines with
+		  Global Page Ordering},
+  booktitle	= {Proc.\ of the 29th Int.\ Conf.\ on Very Large Data Bases},
+  year		= {2003}
+}
+
+@Article{	  long:three-level:2006,
+  author	= {Xiaohui Long and Torsten Suel},
+  title		= {Three-Level Caching for Efficient Query Processing in
+		  Large Web Search Engines},
+  journal	= {Proc.\ of the 15th Int.\ Conf.\ on World Wide Web},
+  year		= {2006},
+  volume	= {9},
+  number	= {4},
+  url		= {http://dx.doi.org/10.1007/s11280-006-0221-0},
+  doi		= {10.1007/s11280-006-0221-0},
+  timestamp	= {Mon, 10 Nov 2014 01:09:14 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/www/LongS06},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  low:object:1999,
+  title		= {Object recognition from local scale-invariant features},
+  author	= {Low, D. G.},
+  booktitle	= {Proceedings of the 7th IEEE International Conference on
+		  Computer Vision},
+  volume	= {2},
+  pages		= {1150--1157},
+  year		= {1999}
+}
+
+@Article{	  lowe:distinctive:2004,
+  author	= "Lowe, D. G.",
+  title		= "Distinctive image features from scale-invariant keypoints",
+  journal	= "International Journal of Computer Vision",
+  year		= "2004",
+  month		= "Nov",
+  day		= "01",
+  volume	= "60",
+  number	= "2",
+  pages		= "91--110",
+  abstract	= "This paper presents a method for extracting distinctive
+		  invariant features from images that can be used to perform
+		  reliable matching between different views of an object or
+		  scene. The features are invariant to image scale and
+		  rotation, and are shown to provide robust matching across a
+		  substantial range of affine distortion, change in 3D
+		  viewpoint, addition of noise, and change in illumination.
+		  The features are highly distinctive, in the sense that a
+		  single feature can be correctly matched with high
+		  probability against a large database of features from many
+		  images. This paper also describes an approach to using
+		  these features for object recognition. The recognition
+		  proceeds by matching individual features to a database of
+		  features from known objects using a fast nearest-neighbor
+		  algorithm, followed by a Hough transform to identify
+		  clusters belonging to a single object, and finally
+		  performing verification through least-squares solution for
+		  consistent pose parameters. This approach to recognition
+		  can robustly identify objects among clutter and occlusion
+		  while achieving near real-time performance.",
+  issn		= "1573-1405"
+}
+
+@Article{	  macdonald:upper-bound:2011,
+  author	= {Craig Macdonald and Iadh Ounis and Nicola Tonellotto},
+  title		= {Upper-bound approximations for dynamic pruning},
+  journal	= {ACM Trans. Inf. Syst.},
+  volume	= {29},
+  number	= {4},
+  year		= {2011},
+  pages		= {17},
+  ee		= {http://doi.acm.org/10.1145/2037661.2037662},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@Article{	  macdonald:whens:2013,
+  author	= {Craig Macdonald and Rodrygo L. T. Santos and Iadh Ounis},
+  title		= {The whens and hows of learning to rank for web search},
+  journal	= {Inf. Retr.},
+  volume	= {16},
+  number	= {5},
+  pages		= {584--628},
+  year		= {2013},
+  url		= {http://dx.doi.org/10.1007/s10791-012-9209-9},
+  doi		= {10.1007/s10791-012-9209-9},
+  timestamp	= {Tue, 24 Sep 2013 18:57:19 +0200},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/ir/MacdonaldSO13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  mackenzie:early:2017,
+  title		= {Early termination heuristics for score-at-a-time index
+		  traversal},
+  author	= {Mackenzie, J. and Scholer, F. and Culpepper, J. S.},
+  booktitle	= {Proceedings of the 22nd Australasian Document Computing
+		  Symposium},
+  year		= {2017}
+}
+
+@Book{		  manning:introduction:2008,
+  author	= {Manning, C. D. and Raghavan, P. and Sch\"{u}tze, H.},
+  title		= {Introduction to information retrieval},
+  publisher	= {Cambridge University Press},
+  year		= {2008}
+}
+
+@InProceedings{	  metzler:automatic:2007,
+  author	= {Donald Metzler},
+  title		= {Automatic feature selection in the markov random field
+		  model for information retrieval},
+  booktitle	= {Proc.\ of the 16th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2007},
+  url		= {http://doi.acm.org/10.1145/1321440.1321478},
+  doi		= {10.1145/1321440.1321478},
+  timestamp	= {Wed, 05 Nov 2014 22:19:48 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/Metzler07},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  mikulik:learning:2013,
+  author	= "Mikulik, A. and Perdoch, M. and Chum, O. and Matas, J.",
+  title		= "Learning vocabularies over a fine quantization",
+  journal	= "International Journal of Computer Vision",
+  year		= "2013",
+  month		= "May",
+  day		= "01",
+  volume	= "103",
+  number	= "1",
+  pages		= "163--175",
+  abstract	= "A novel similarity measure for bag-of-words type large
+		  scale image retrieval is presented. The similarity function
+		  is learned in an unsupervised manner, requires no extra
+		  space over the standard bag-of-words method and is more
+		  discriminative than both L2-based soft assignment and
+		  Hamming embedding. The novel similarity function achieves
+		  mean average precision that is superior to any result
+		  published in the literature on the standard Oxford 5k,
+		  Oxford 105k and Paris datasets/protocols. We study the
+		  effect of a fine quantization and very large vocabularies
+		  (up to 64 million words) and show that the performance of
+		  specific object retrieval increases with the size of the
+		  vocabulary. This observation is in contradiction with
+		  previously published results. We further demonstrate that
+		  the large vocabularies increase the speed of the tf-idf
+		  scoring step.",
+  issn		= "1573-1405"
+}
+
+@Article{	  moffat:memory:1994,
+  title		= {Memory efficient ranking},
+  author	= {Moffat, Alistair and Zobel, Justin and Sacks-Davis, Ron},
+  journal	= {Information Processing \& Management},
+  volume	= {30},
+  number	= {6},
+  pages		= {733--744},
+  year		= {1994},
+  publisher	= {Elsevier}
+}
+
+@Article{	  moffat:self-indexing:1996,
+  title		= {Self-indexing inverted files for fast text retrieval},
+  author	= {Moffat, Alistair and Zobel, Justin},
+  journal	= {ACM Transactions on Information Systems (TOIS)},
+  volume	= {14},
+  number	= {4},
+  pages		= {349--379},
+  year		= {1996},
+  publisher	= {ACM}
+}
+
+@InProceedings{	  nister:scalable:2006,
+  author	= {D. Nister and H. Stewenius},
+  booktitle	= {2006 IEEE Computer Society Conference on Computer Vision
+		  and Pattern Recognition},
+  title		= {Scalable Recognition with a Vocabulary Tree},
+  year		= {2006},
+  volume	= {2},
+  pages		= {2161--2168}
+}
+
+@InProceedings{	  ntoulas:pruning:2007,
+  author	= {Alexandros Ntoulas and Junghoo Cho},
+  title		= {Pruning policies for two-tiered inverted index with
+		  correctness guarantee},
+  booktitle	= {Proc.\ of the 30th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2007},
+  url		= {http://doi.acm.org/10.1145/1277741.1277776},
+  doi		= {10.1145/1277741.1277776},
+  timestamp	= {Sun, 09 Nov 2014 01:29:59 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/sigir/NtoulasC07},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  ojala:comparative:1996,
+  title		= {A comparative study of texture measures with
+		  classification based on featured distributions},
+  author	= {Ojala, T. and Pietik{\"a}inen, M. and Harwood, D.},
+  journal	= {Pattern Recognition},
+  volume	= {29},
+  number	= {1},
+  pages		= {51--59},
+  year		= {1996}
+}
+
+@InProceedings{	  ottaviano:partitioned:2014,
+  author	= {Giuseppe Ottaviano and Rossano Venturini},
+  title		= {Partitioned Elias-Fano indexes},
+  booktitle	= {Proc.\ of the 37th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2014},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  ozcan:five-level:2012,
+  author	= {Rifat Ozcan and Ismail Seng{\"{o}}r Alting{\"{o}}vde and
+		  Berkant Barla Cambazoglu and Flavio Paiva Junqueira and
+		  {\"{O}}zg{\"{u}}r Ulusoy},
+  title		= {A five-level static cache architecture for web search
+		  engines},
+  journal	= {Inf. Process. Manage.},
+  volume	= {48},
+  number	= {5},
+  pages		= {828--840},
+  year		= {2012},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/ipm/OzcanACJU12},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  page:pagerank:1999,
+  title		= {The PageRank citation ranking: bringing order to the
+		  web.},
+  author	= {Page, Lawrence and Brin, Sergey and Motwani, Rajeev and
+		  Winograd, Terry},
+  year		= {1999},
+  publisher	= {Stanford InfoLab}
+}
+
+@Article{	  persin:filtered:1996,
+  title		= {Filtered document retrieval with frequency-sorted
+		  indexes},
+  author	= {Persin, M. and Zobel, J. and Sacks-Davis, R.},
+  journal	= {Journal of the American Society for Information Science},
+  volume	= {47},
+  number	= {10},
+  pages		= {749--764},
+  year		= {1996}
+}
+
+@InProceedings{	  philbin:lost:2008,
+  title		= {Lost in quantization: Improving particular object
+		  retrieval in large scale image databases},
+  author	= {Philbin, J. and Chum, O. and Isard, M. and Sivic, J. and
+		  Zisserman, A.},
+  booktitle	= {2008 IEEE Conference on Computer Vision and Pattern
+		  Recognition},
+  pages		= {1--8},
+  year		= {2008}
+}
+
+@InProceedings{	  philbin:object:2007,
+  author	= {J. Philbin and O. Chum and M. Isard and J. Sivic and A.
+		  Zisserman},
+  booktitle	= {2007 IEEE Conference on Computer Vision and Pattern
+		  Recognition},
+  title		= {Object retrieval with large vocabularies and fast spatial
+		  matching},
+  year		= {2007},
+  pages		= {1--8}
+}
+
+@Unpublished{	  pibiri:inverted:2017,
+  title		= {Inverted Index Compression},
+  author	= {Pibiri, Giulio Ermanno and Venturini, Rossano},
+  note		= {Unpublished manuscript},
+  year		= {2017}
+}
+
+@InProceedings{	  poess:data:2003,
+  author	= {Poess, M. and Potapov, D.},
+  title		= {Data compression in oracle},
+  booktitle	= {Proceedings of the 29th International Conference on Very
+		  Large Data Bases},
+  pages		= {937--947},
+  year		= {2003}
+}
+
+@InProceedings{	  puppin:query-driven:2006,
+  author	= {Puppin, Diego and Silvestri, Fabrizio and Laforenza,
+		  Domenico},
+  title		= {Query-driven Document Partitioning and Collection
+		  Selection},
+  booktitle	= {Proceedings of the 1st International Conference on
+		  Scalable Information Systems},
+  series	= {InfoScale '06},
+  year		= {2006},
+  isbn		= {1-59593-428-6},
+  location	= {Hong Kong},
+  articleno	= {34},
+  url		= {http://doi.acm.org/10.1145/1146847.1146881},
+  doi		= {10.1145/1146847.1146881},
+  acmid		= {1146881},
+  publisher	= {ACM},
+  address	= {New York, NY, USA}
+}
+
+@Article{	  qin:letor-:2010,
+  author	= {Tao Qin and Tie{-}Yan Liu and Jun Xu and Hang Li},
+  title		= {{LETOR:} {A} benchmark collection for research on learning
+		  to rank for information retrieval},
+  journal	= {Inf. Retr.},
+  year		= {2010},
+  volume	= {13},
+  number	= {4},
+  pages		= {346--374},
+  url		= {http://dx.doi.org/10.1007/s10791-009-9123-y},
+  doi		= {10.1007/s10791-009-9123-y},
+  timestamp	= {Fri, 07 Nov 2014 02:40:52 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/ir/QinLXL10},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  quack:cortina:2004,
+  title		= {Cortina: a system for large-scale, content-based web image
+		  retrieval},
+  author	= {Quack, Till and M{\"o}nich, Ullrich and Thiele, Lars and
+		  Manjunath, BS},
+  booktitle	= {Proceedings of the 12th annual ACM international
+		  conference on Multimedia},
+  pages		= {508--511},
+  year		= {2004},
+  organization	= {ACM}
+}
+
+@InProceedings{	  randall:link:2002,
+  author	= {K. H. Randall and R. Stata and R. G. Wickremesinghe and J.
+		  L. Wiener},
+  booktitle	= {Proceedings of the 2002 Data Compression Conference},
+  title		= {The link database: fast access to graphs of the Web},
+  year		= {2002},
+  pages		= {122--131}
+}
+
+@InProceedings{	  richardson:beyond:2006,
+  title		= {Beyond PageRank: machine learning for static ranking},
+  author	= {Richardson, Matthew and Prakash, Amit and Brill, Eric},
+  booktitle	= {Proceedings of the 15th international conference on World
+		  Wide Web},
+  pages		= {707--715},
+  year		= {2006},
+  organization	= {ACM}
+}
+
+@InProceedings{	  risvik:maguro:2013,
+  author	= {Knut Magne Risvik and Trishul M. Chilimbi and Henry Tan
+		  and Karthik Kalyanaraman and Chris Anderson},
+  title		= {Maguro, a system for indexing and searching over very
+		  large text collections},
+  booktitle	= {Proc.\ of the Sixth Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2013},
+  url		= {http://doi.acm.org/10.1145/2433396.2433486},
+  doi		= {10.1145/2433396.2433486},
+  timestamp	= {Sun, 09 Nov 2014 01:13:37 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/wsdm/RisvikCTKA13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  risvik:multi-tier:2003,
+  author	= "K. Risvik and Y. Aasheim and M. Lidal",
+  title		= "Multi-tier Architecture for Web Search Engines",
+  booktitle	= "1st LA Web Congress",
+  year		= "2003"
+}
+
+@Article{	  robertson:okapi:1995,
+  title		= {Okapi at TREC-3},
+  author	= {Robertson, Stephen E and Walker, Steve and Jones, Susan
+		  and Hancock-Beaulieu, Micheline M and Gatford, Mike and
+		  others},
+  journal	= {Nist Special Publication Sp},
+  volume	= {109},
+  pages		= {109},
+  year		= {1995},
+  publisher	= {NATIONAL INSTIUTE OF STANDARDS \& TECHNOLOGY}
+}
+
+@InProceedings{	  rossi:fast:2013,
+  author	= {Cristian Rossi and Edleno Silva de Moura and Andre L.
+		  Carvalho and Altigran Soares da Silva},
+  title		= {Fast document-at-a-time query processing using two-tier
+		  indexes},
+  booktitle	= {Proc.\ of the 36th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2013},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@TechReport{	  roth:survey:2008,
+  author	= {Roth, P. M. and Winter, M.},
+  year		= {2008},
+  institution	= {Institute for Computer Graphics and Vision, Graz
+		  University of Technology},
+  title		= {Survey of appearance-based methods for object
+		  recognition.}
+}
+
+@InProceedings{	  roussopoulos:nearest:1995,
+  title		= {Nearest neighbor queries},
+  author	= {Roussopoulos, N. and Kelley, S. and Vincent, F.},
+  booktitle	= {Proceedings of the 1995 ACM SIGMOD International
+		  Conference On Management of Data},
+  volume	= {24},
+  number	= {2},
+  pages		= {71--79},
+  year		= {1995}
+}
+
+@Misc{		  salton:search:1971,
+  author	= {G. Salton},
+  title		= {Search Strategy and the Optimization of Retrieval
+		  Effectiveness},
+  year		= {1971}
+}
+
+@InProceedings{	  schenkel:efficient:2007,
+  author	= {Ralf Schenkel and Andreas Broschart and Seung{-}won Hwang
+		  and Martin Theobald and Gerhard Weikum},
+  title		= {Efficient Text Proximity Search},
+  booktitle	= {Proc.\ of the 14th Int.\ Symposium on String Processing
+		  and Information Retrieval},
+  year		= {2007},
+  url		= {http://dx.doi.org/10.1007/978-3-540-75530-2_26},
+  doi		= {10.1007/978-3-540-75530-2_26},
+  timestamp	= {Sat, 08 Nov 2014 18:47:21 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/spire/SchenkelBHTW07},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  scholer:compression:2002,
+  author	= {Scholer, F. and Williams, H. E. and Yiannis, J. and Zobel,
+		  J.},
+  title		= {Compression of inverted indexes for fast query
+		  evaluation},
+  booktitle	= {Proceedings of the 25th Annual International ACM SIGIR
+		  Conference on Research and Development in Information
+		  Retrieval},
+  year		= {2002},
+  pages		= {222--229},
+  numpages	= {8}
+}
+
+@TechReport{	  shaft:nearest:1998,
+  title		= {Nearest neighbor query performance for unstable
+		  distributions},
+  author	= {Shaft, U. and Goldstein, J. and Beyer, K.},
+  institution	= {Department of Computer Science, University of Wisconsin},
+  volume	= {1388},
+  year		= {1998}
+}
+
+@InProceedings{	  shan:optimized:2012,
+  author	= {Dongdong Shan and Shuai Ding and Jing He and Hongfei Yan
+		  and Xiaoming Li},
+  title		= {Optimized top-k processing with global page scores on
+		  block-max indexes},
+  booktitle	= {Proc.\ of the Fifth Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2012},
+  ee		= {http://doi.acm.org/10.1145/2124295.2124346},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{	  shekhar:word:2012,
+  author	= {R. Shekhar and C. V. Jawahar},
+  booktitle	= {Proceedings of the 10th IAPR International Workshop on
+		  Document Analysis Systems},
+  title		= {Word image retrieval using bag of visual words},
+  year		= {2012},
+  pages		= {297-301}
+}
+
+@Article{	  shete:content:2012,
+  title		= {Content Based Image Retrieval},
+  author	= {Shete, Deepak S and Chavan, MS and Kolhapur, Kit},
+  journal	= {InternationalJournal of Emerging Technology and Advanced
+		  Engineering},
+  volume	= {2},
+  number	= {9},
+  pages		= {85--90},
+  year		= {2012}
+}
+
+@Article{	  shieh:inverted:2003*1,
+  author	= {Wann-Yun Shieh and Tien-Fu Chen and Jean Jyh-Jiun Shann
+		  and Chung-Ping Chung},
+  title		= {Inverted file compression through document identifier
+		  reassignment},
+  journal	= {Inf. Processing and Management},
+  volume	= {39},
+  number	= {1},
+  year		= {2003},
+  pages		= {117-131}
+}
+
+@Article{	  shokouhi:federated:2011,
+  title		= {Federated search},
+  author	= {Shokouhi, Milad and Si, Luo},
+  journal	= {Foundations and Trends in Information Retrieval},
+  volume	= {5},
+  number	= {1},
+  pages		= {1--102},
+  year		= {2011},
+  publisher	= {Now Publishers Inc.}
+}
+
+@InProceedings{	  si:relevant:2003,
+  title		= {Relevant document distribution estimation method for
+		  resource selection},
+  author	= {Si, Luo and Callan, Jamie},
+  booktitle	= {Proceedings of the 26th annual international ACM SIGIR
+		  conference on Research and development in informaion
+		  retrieval},
+  pages		= {298--305},
+  year		= {2003},
+  organization	= {ACM}
+}
+
+@InProceedings{	  silvestri:assigning:2004,
+  author	= {Silvestri, F. and Perego, R. and Orlando, S.},
+  title		= {Assigning document identifiers to enhance compressibility
+		  of web search engines indexes},
+  booktitle	= {Proceedings of the 2004 ACM Symposium on Applied
+		  Computing},
+  year		= {2004},
+  pages		= {600--605}
+}
+
+@InProceedings{	  silvestri:vsencoding:2010,
+  author	= {Fabrizio Silvestri and Rossano Venturini},
+  title		= {VSEncoding: efficient coding and fast decoding of integer
+		  lists via dynamic programming},
+  booktitle	= {Proc.\ of the 19th ACM Conf.\ on Information and Knowledge
+		  Management},
+  year		= {2010},
+  ee		= {http://doi.acm.org/10.1145/1871437.1871592},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{	  silvestri:sorting:2007,
+  title		= {Sorting out the document identifier assignment problem},
+  author	= {Silvestri, Fabrizio},
+  booktitle	= {European conference on information retrieval},
+  pages		= {101--112},
+  year		= {2007},
+  organization	= {Springer}
+}
+
+@InCollection{	  sivic:video:2006,
+  title		= {Video Google: Efficient visual search of videos},
+  author	= {Sivic, J. and Zisserman, A.},
+  booktitle	= {Toward Category-Level Object Recognition},
+  pages		= {127--144},
+  year		= {2006}
+}
+
+@InProceedings{	  skobeltsyn:resin:2008,
+  author	= {Gleb Skobeltsyn and Flavio Junqueira and Vassilis
+		  Plachouras and Ricardo A. Baeza{-}Yates},
+  title		= {ResIn: a combination of results caching and index pruning
+		  for high-performance web search engines},
+  booktitle	= {Proc.\ of the 31th Int.\ ACM SIGIR Conf.\ on Research and
+		  Development in Information Retrieval},
+  year		= {2008}
+}
+
+@InProceedings{	  strohman:efficient:2007,
+  author	= {Strohman, T. and Croft, W. B.},
+  title		= {Efficient document retrieval in main memory},
+  booktitle	= {\sigir{30th}},
+  year		= {2007},
+  pages		= {175--182},
+  numpages	= {8}
+}
+
+@InProceedings{	  strohman:optimization:2005,
+  author	= {Trevor Strohman and Howard R. Turtle and W. Bruce Croft},
+  title		= {Optimization strategies for complex queries},
+  booktitle	= {Proc.\ of the 28th Annual Int.\ ACM SIGIR Conf.\ on
+		  Research and Development in Information Retrieval},
+  year		= {2005},
+  ee		= {http://doi.acm.org/10.1145/1076034.1076074},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@PhDThesis{	  strohman:efficient:2007,
+  author	= {T. Strohman},
+  title		= {Efficient Processing of Complex Features for Information
+		  Retrieval},
+  school	= {University of Massachusetts Amherst},
+  year		= {2007}
+}
+
+@InProceedings{	  thomas:sushi:2009,
+  title		= {SUSHI: scoring scaled samples for server selection},
+  author	= {Thomas, Paul and Shokouhi, Milad},
+  booktitle	= {Proceedings of the 32nd international ACM SIGIR conference
+		  on Research and development in information retrieval},
+  pages		= {419--426},
+  year		= {2009},
+  organization	= {ACM}
+}
+
+@InProceedings{	  tonellotto:efficient:2013,
+  author	= {Nicola Tonellotto and Craig Macdonald and Iadh Ounis},
+  title		= {Efficient and effective retrieval using selective
+		  pruning},
+  booktitle	= {Proc.\ of the Sixth Int.\ Conf.\ on Web Search and Data
+		  Mining},
+  year		= {2013},
+  url		= {http://doi.acm.org/10.1145/2433396.2433407},
+  doi		= {10.1145/2433396.2433407},
+  timestamp	= {Wed, 05 Nov 2014 22:18:06 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/wsdm/TonellottoMO13},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  trotman:compressing:2003,
+  author	= {Andrew Trotman},
+  title		= {Compressing Inverted Files},
+  journal	= {Inf. Retr.},
+  volume	= {6},
+  number	= {1},
+  year		= {2003},
+  pages		= {5-19},
+  ee		= {http://dx.doi.org/10.1023/A:1022949613039},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{	  tsegay:document:2009,
+  author	= "Tsegay, Y. and Puglisi, S. J. and Turpin, A. and Zobel,
+		  J.",
+  title		= "Document compaction for efficient query biased snippet
+		  generation",
+  booktitle	= "Proceedings of the 31th European Conference on Information
+		  Retrieval",
+  year		= "2009",
+  pages		= {509--520}
+}
+
+@InProceedings{	  tunkelang:making:2002,
+  title		= {Making the nearest neighbor meaningful},
+  author	= {Tunkelang, D.},
+  booktitle	= {SIAM Workshop on Clustering High Dimensional Data and its
+		  Applications},
+  year		= {2002}
+}
+
+@InProceedings{	  turpin:fast:2007,
+  author	= {Turpin, A. and Tsegay, Y. and Hawking, D. and Williams, H.
+		  E.},
+  title		= {Fast generation of result snippets in web search},
+  booktitle	= {Proceedings of the 30th Annual International ACM SIGIR
+		  Conference on Research and Development in Information
+		  Retrieval},
+  year		= {2007},
+  pages		= {127--134},
+  numpages	= {8}
+}
+
+@Article{	  turtle:query:1995,
+  title		= "Query evaluation: Strategies and optimizations",
+  journal	= "Information Processing \& Management",
+  volume	= "31",
+  number	= "6",
+  pages		= "831--850",
+  year		= "1995",
+  author	= "H. Turtle and J. Flood"
+}
+
+@InProceedings{	  vigna:quasi-succinct:2013,
+  title		= {Quasi-succinct indices},
+  author	= {Vigna, S.},
+  booktitle	= {\wsdm{6th}},
+  pages		= {83--92},
+  year		= {2013}
+}
+
+@InProceedings{	  wang:cascade:2011,
+  author	= {Wang, L. and Lin, J. and Metzler, D.},
+  title		= {A cascade ranking model for efficient ranked retrieval},
+  booktitle	= {\sigir{34th}},
+  year		= {2011},
+  pages		= {105--114},
+  numpages	= {10}
+}
+
+@InProceedings{	  wang:fast:2016,
+  title		= {Fast first-phase candidate generation for cascading
+		  rankers},
+  author	= {Wang, Q. and Dimopoulos, C. and Suel, T.},
+  booktitle	= {\sigir{39th}},
+  pages		= {295--304},
+  year		= {2016}
+}
+
+@InProceedings{	  wang:learning:2010,
+  author	= {Wang, L. and Lin, J. and Metzler, D.},
+  title		= {Learning to efficiently rank},
+  booktitle	= {Proceedings of the 33rd International ACM SIGIR Conference
+		  on Research and Development in Information Retrieval},
+  year		= {2010},
+  pages		= {138--145},
+  numpages	= {8}
+}
+
+@InProceedings{	  wang:learning:2010*1,
+  author	= {Wang, L. and Lin, J. and Metzler, D.},
+  title		= {Learning to efficiently rank},
+  booktitle	= {\sigir{33rd}},
+  year		= {2010},
+  pages		= {138--145},
+  numpages	= {8}
+}
+
+@InProceedings{	  weber:quantitative:1998,
+  title		= {A quantitative analysis and performance study for
+		  similarity-search methods in high-dimensional spaces},
+  author	= {Weber, R. and Schek, H.-J. and Blott, S.},
+  booktitle	= {Proceedings of the 24th Very Large Data Bases Conference},
+  volume	= {98},
+  pages		= {194--205},
+  year		= {1998}
+}
+
+@Book{		  witten:managing:1994,
+  author	= {Witten, I. H. and Bell, T. C. and Moffat, A.},
+  title		= {Managing gigabytes: compressing and indexing documents and
+		  images},
+  year		= {1994},
+  publisher	= {Morgan Kaufmann},
+  edition	= {1st}
+}
+
+@Book{		  witten:managing:1999,
+  author	= {Ian H. Witten and Alistair Moffat and Timothy C. Bell},
+  title		= {Managing Gigabytes: Compressing and Indexing Documents and
+		  Images, Second Edition},
+  publisher	= {Morgan Kaufmann},
+  year		= {1999},
+  isbn		= {1-55860-570-3},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@Article{	  wu:adapting:2010,
+  author	= {Qiang Wu and Christopher J. C. Burges and Krysta Marie
+		  Svore and Jianfeng Gao},
+  title		= {Adapting boosting for information retrieval measures},
+  journal	= {Inf. Retr.},
+  year		= {2010},
+  volume	= {13},
+  number	= {3},
+  pages		= {254--270},
+  url		= {http://dx.doi.org/10.1007/s10791-009-9112-1},
+  doi		= {10.1007/s10791-009-9112-1},
+  timestamp	= {Thu, 06 Nov 2014 00:31:43 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/journals/ir/WuBSG10},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  wu:document:2014,
+  author	= {Hao Wu and Hui Fang},
+  title		= {Document Prioritization for Scalable Query Processing},
+  booktitle	= {Proc.\ of the 23rd {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2014},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/WuF14},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  xu:cluster-based:1999,
+  title		= {Cluster-based language models for distributed retrieval},
+  author	= {Xu, Jinxi and Croft, W Bruce},
+  booktitle	= {Proceedings of the 22nd annual international ACM SIGIR
+		  conference on Research and development in information
+		  retrieval},
+  pages		= {254--261},
+  year		= {1999},
+  organization	= {ACM}
+}
+
+@InProceedings{	  yan:efficient:2010,
+  author	= {Hao Yan and Shuming Shi and Fan Zhang and Torsten Suel and
+		  Ji{-}Rong Wen},
+  title		= {Efficient term proximity search with term-pair indexes},
+  booktitle	= {Proc.\ of the 19th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2010},
+  url		= {http://doi.acm.org/10.1145/1871437.1871593},
+  doi		= {10.1145/1871437.1871593},
+  timestamp	= {Sat, 08 Nov 2014 18:44:55 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/YanSZSW10},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  yan:inverted:2009,
+  author	= {Yan, H. and Ding, S. and Suel, T.},
+  title		= {Inverted index compression and query processing with
+		  optimized document ordering},
+  booktitle	= {Proceedings of the 18th International Conference on World
+		  Wide Web},
+  year		= {2009},
+  pages		= {401--410},
+  numpages	= {10}
+}
+
+@TechReport{	  zhang:local:2005,
+  title		= {Local features and kernels for classification of texture
+		  and object categories: An in-depth study},
+  author	= {Zhang, J. and Marsza{\l}ek, M. and Lazebnik, S. and
+		  Schmid, C.},
+  year		= {2005},
+  type		= {Research Report},
+  number	= {RR-5737},
+  pages		= {39},
+  institution	= {INRIA}
+}
+
+@InProceedings{	  zhang:performance:2008,
+  author	= {Jiangong Zhang and Xiaohui Long and Torsten Suel},
+  title		= {Performance of compressed inverted list caching in search
+		  engines},
+  booktitle	= {Proc.\ of the 17th Int.\ Conf.\ on World Wide Web},
+  year		= {2008},
+  ee		= {http://doi.acm.org/10.1145/1367497.1367550},
+  bibsource	= {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{	  zhang:revisiting:2010,
+  title		= {Revisiting globally sorted indexes for efficient document
+		  retrieval},
+  author	= {Zhang, Fan and Shi, Shuming and Yan, Hao and Wen,
+		  Ji-Rong},
+  booktitle	= {Proceedings of the third ACM international conference on
+		  Web search and data mining},
+  pages		= {371--380},
+  year		= {2010},
+  organization	= {ACM}
+}
+
+@InProceedings{	  zhu:can:2008,
+  author	= {Mingjie Zhu and Shuming Shi and Nenghai Yu and Ji{-}Rong
+		  Wen},
+  title		= {Can phrase indexing help to process non-phrase queries?},
+  booktitle	= {Proc.\ of the 17th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2008},
+  url		= {http://doi.acm.org/10.1145/1458082.1458174},
+  doi		= {10.1145/1458082.1458174},
+  timestamp	= {Sat, 08 Nov 2014 18:43:56 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/ZhuSYW08},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@InProceedings{	  zhu:effective:2007,
+  author	= {Mingjie Zhu and Shuming Shi and Mingjing Li and Ji{-}Rong
+		  Wen},
+  title		= {Effective top-k computation in retrieving structured
+		  documents with term-proximity support},
+  booktitle	= {Proc.\ of the 16th {ACM} Conf.\ Information and Knowledge
+		  Management},
+  year		= {2007},
+  url		= {http://doi.acm.org/10.1145/1321440.1321547},
+  doi		= {10.1145/1321440.1321547},
+  timestamp	= {Sat, 08 Nov 2014 18:42:43 +0100},
+  biburl	= {http://dblp.uni-trier.de/rec/bib/conf/cikm/ZhuSLW07},
+  bibsource	= {dblp computer science bibliography, http://dblp.org}
+}
+
+@Article{	  zobel:inverted:1998,
+  title		= {Inverted files versus signature files for text indexing},
+  author	= {Zobel, J. and Moffat, A. and Ramamohanarao, K.},
+  journal	= {ACM Transactions on Database Systems (TODS)},
+  volume	= {23},
+  number	= {4},
+  pages		= {453--490},
+  year		= {1998}
+}
+
+@Article{	  zobel:inverted:2006,
+  author	= {Zobel, J. and Moffat, A.},
+  title		= {Inverted files for text search engines},
+  journal	= {ACM Computing Surveys},
+  issue_date	= {2006},
+  volume	= {38},
+  number	= {2},
+  month		= jul,
+  year		= {2006},
+  articleno	= {6}
+}
+
+@InProceedings{	  zukowski:super-scalar:2006,
+  author	= {M. Zukowski and S. Heman and N. Nes and P. Boncz},
+  booktitle	= {Proceedings of the 22nd International Conference on Data
+		  Engineering},
+  title		= {Super-scalar RAM-CPU cache compression},
+  year		= {2006}
 }
