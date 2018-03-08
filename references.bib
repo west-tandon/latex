@@ -1,0 +1,527 @@
+@preamble{ "\newcommand{\sigir}[1]{Proceedings of the #1 Annual International ACM SIGIR Conference on Research and Development in Information Retrieval}" }
+@preamble{ "\newcommand{\cikm}[1]{Proceedings of the #1 International Conference on Information and Knowledge Management}" }
+@preamble{ "\newcommand{\wsdm}[1]{Proceedings of the #1 ACM International Conference on Web Search and Data Mining}" }
+
+
+@inproceedings {raat,
+ author = {Elbagoury, A. and Crane, M. and Lin, J.},
+ title = {Rank-at-a-time query processing},
+ booktitle = {Proceedings of the 2016 ACM International Conference on the Theory of Information Retrieval},
+ year = {2016},
+ pages = {229--232},
+ numpages = {4}
+}
+
+@inproceedings{broder:wand:2003,
+ author = {Broder, A. Z. and Carmel, D. and Herscovici, M. and Soffer, A. and Zien, J.},
+ title = {Efficient query evaluation using a two-level retrieval process},
+ booktitle = {\cikm{12th}},
+ year = {2003},
+ pages = {426--434},
+ numpages = {9}
+}
+
+@inproceedings{dimopoulos:blockmax:2013,
+  title={Optimizing top-k document retrieval strategies for block-max indexes},
+  author={Dimopoulos, C. and Nepomnyachiy, S. and Suel, T.},
+  booktitle={\wsdm{6th}},
+  pages={113--122},
+  year={2013}
+}
+
+@inproceedings{ding:blockmax:2011,
+  title={Faster top-k document retrieval using block-max indexes},
+  author={Ding, S. and Suel, T.},
+  booktitle={\sigir{34th}},
+  pages={993--1002},
+  year={2011}
+}
+
+@article{moffat:memory-efficient:1996,
+  title={Self-indexing inverted files for fast text retrieval},
+  author={Moffat, Alistair and Zobel, Justin},
+  journal={ACM Transactions on Information Systems (TOIS)},
+  volume={14},
+  number={4},
+  pages={349--379},
+  year={1996},
+  publisher={ACM}
+}
+
+@article{moffat:memory:1994,
+  title={Memory efficient ranking},
+  author={Moffat, Alistair and Zobel, Justin and Sacks-Davis, Ron},
+  journal={Information Processing \& Management},
+  volume={30},
+  number={6},
+  pages={733--744},
+  year={1994},
+  publisher={Elsevier}
+}
+
+@inproceedings{anh:vector:2001,
+  title={Vector-space ranking with effective early termination},
+  author={Anh, V. N. and de Kretser, O. and Moffat, A.},
+  booktitle={\sigir{24th}},
+  pages={35--42},
+  year={2001}
+}
+
+@article{persin:saat:1996,
+  title={Filtered document retrieval with frequency-sorted indexes},
+  author={Persin, Michael and Zobel, Justin and Sacks-Davis, Ron},
+  journal={JASIS},
+  volume={47},
+  number={10},
+  pages={749--764},
+  year={1996}
+}
+
+@inproceedings{lin:jass:2015,
+  title={Anytime ranking for impact-ordered indexes},
+  author={Lin, J. and Trotman, A.},
+  booktitle={Proceedings of the 2015 International Conference on The Theory of Information Retrieval},
+  pages={301--304},
+  year={2015}
+}
+
+@inbook{manning:intro-to-ir:2008,
+ author = {Manning, Christopher D. and Raghavan, Prabhakar and Sch\"{u}tze, Hinrich},
+ title = {Introduction to Information Retrieval},
+ year = {2008},
+ isbn = {0521865719, 9780521865715},
+ publisher = {Cambridge University Press},
+ address = {New York, NY, USA},
+ chapter = {1.2}
+}
+
+@article{zobel:survey:2006,
+ author = {Zobel, J. and Moffat, A.},
+ title = {Inverted files for text search engines},
+ journal = {ACM Computing Surveys},
+ issue_date = {2006},
+ volume = {38},
+ number = {2},
+ month = jul,
+ year = {2006},
+ articleno = {6}
+}
+
+@article{turtle:queryeval:1995,
+ title = "Query evaluation: Strategies and optimizations",
+ journal = "Information Processing \& Management",
+ volume = "31",
+ number = "6",
+ pages = "831--850",
+ year = "1995",
+ author = "H. Turtle and J. Flood"
+}
+
+@inproceedings{kaszkiel:taat-daat:1998,
+ author = {Kaszkiel, M. and Zobel, J.},
+ title = {Term-ordered query evaluation versus document-ordered query evaluation for large document databases},
+ booktitle = {\sigir{21th}},
+ year = {1998},
+ pages = {343--344},
+ numpages = {2}
+}
+
+@inproceedings{nister:scalable:2006, 
+author={D. Nister and H. Stewenius}, 
+booktitle={2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+title={Scalable recognition with a vocabulary tree}, 
+year={2006}, 
+pages={2161-2168}
+}
+
+@inproceedings{bendersky:analysis-long-queries:2009,
+ author = {Bendersky, M. and Croft, W. B.},
+ title = {Analysis of long queries in a large scale search log},
+ booktitle = {Proceedings of the 2009 Workshop on Web Search Click Data},
+ year = {2009},
+ pages = {8--14},
+ numpages = {7},
+}
+
+@article{gupta:verbose:2015,
+ author = {Manish Gupta and Michael Bendersky},
+ title = {Information Retrieval with Verbose Queries},
+ journal = {Foundations and Trends in Information Retrieval},
+ year = {2015},
+ volume = {9},
+ number = {3-4},
+ pages = {209-354}
+}
+
+@inproceedings{huston:evaluating-verbose:2010,
+ author = {Huston, S. and Croft, W. B.},
+ title = {Evaluating verbose query processing techniques},
+ booktitle = {\sigir{33rd}},
+ year = {2010},
+ pages = {291--298},
+ numpages = {8}
+}
+
+@inproceedings{shekhar:image-retrieval:2012, 
+ author={R. Shekhar and C. V. Jawahar}, 
+ booktitle={Proceedings of the 10th IAPR International Workshop on Document Analysis Systems}, 
+ title={Word image retrieval using bag of visual words}, 
+ year={2012}, 
+ pages={297-301},
+}
+
+@article{liu:image-retrieval:2013,
+  title={Image retrieval based on bag-of-words model},
+  author={Liu, J.},
+  journal={arXiv preprint arXiv:1304.5168},
+  year={2013}
+}
+
+@inproceedings{low:sift:1999,
+  title={Object recognition from local scale-invariant features},
+  author={Low, D. G.},
+  booktitle={Proceedings of the 7th IEEE International Conference on Computer Vision},
+  volume={2},
+  pages={1150--1157},
+  year={1999}
+}
+
+@inproceedings{jiang:keypoints:2007,
+  title={Towards optimal bag-of-features for object categorization and semantic video retrieval},
+  author={Jiang, Y.-G. and Ngo, C.-W. and Yang, J.},
+  booktitle={Proceedings of the 6th ACM international Conference on Image and Video Retrieval},
+  pages={494--501},
+  year={2007}
+}
+
+@inproceedings{bay:surf:2006,
+  title={Surf: Speeded up robust features},
+  author={Bay, H. and Tuytelaars, T. and Van Gool, L.},
+  booktitle={Proceedings of the 9th European Conference on Computer Vision},
+  pages={404--417},
+  year={2006},
+  publisher={Springer}
+}
+
+@article{ojala:lbp:1996,
+  title={A comparative study of texture measures with classification based on featured distributions},
+  author={Ojala, T. and Pietik{\"a}inen, M. and Harwood, D.},
+  journal={Pattern Recognition},
+  volume={29},
+  number={1},
+  pages={51--59},
+  year={1996}
+}
+
+@incollection{sivic:videogoogle:2006,
+  title={Video Google: Efficient visual search of videos},
+  author={Sivic, J. and Zisserman, A.},
+  booktitle={Toward Category-Level Object Recognition},
+  pages={127--144},
+  year={2006}
+}
+
+@inproceedings{beyer:nnmeaningful:1999,
+  title={When is “nearest neighbor” meaningful?},
+  author={Beyer, K. and Goldstein, J. and Ramakrishnan, R. and Shaft, U.},
+  booktitle={Proceedings of the 7th International Conference on Database Theory},
+  pages={217--235},
+  year={1999}
+}
+
+@inproceedings{hinneburg:whatisnn:2000,
+  title={What is the nearest neighbor in high dimensional spaces?},
+  author={Hinneburg, A. and Aggarwal, C. C. and Keim, D. A.},
+  booktitle={Proceedings of the 26th International Conference on Very Large Databases},
+  pages={506--515},
+  year={2000}
+}
+
+@inproceedings{tunkelang:makingnn:2002,
+  title={Making the nearest neighbor meaningful},
+  author={Tunkelang, D.},
+  booktitle={SIAM Workshop on Clustering High Dimensional Data and its Applications},
+  year={2002}
+}
+
+@inproceedings{quack:cortina:2004,
+  title={Cortina: a system for large-scale, content-based web image retrieval},
+  author={Quack, Till and M{\"o}nich, Ullrich and Thiele, Lars and Manjunath, BS},
+  booktitle={Proceedings of the 12th annual ACM international conference on Multimedia},
+  pages={508--511},
+  year={2004},
+  organization={ACM}
+}
+
+@article{shete:contentbased:2012,
+  title={Content Based Image Retrieval},
+  author={Shete, Deepak S and Chavan, MS and Kolhapur, Kit},
+  journal={InternationalJournal of Emerging Technology and Advanced Engineering},
+  volume={2},
+  number={9},
+  pages={85--90},
+  year={2012}
+}
+
+@inproceedings{weber:quantitative:1998,
+  title={A quantitative analysis and performance study for similarity-search methods in high-dimensional spaces},
+  author={Weber, R. and Schek, H.-J. and Blott, S.},
+  booktitle={Proceedings of the 24th Very Large Data Bases Conference},
+  volume={98},
+  pages={194--205},
+  year={1998}
+}
+
+@techreport{shaft:nearest:1998,
+  title={Nearest neighbor query performance for unstable distributions},
+  author={Shaft, U. and Goldstein, J. and Beyer, K.},
+  institution={Department of Computer Science, University of Wisconsin},
+  volume={1388},
+  year={1998}
+}
+
+@inproceedings{lacour:efficiency-comparison:2008,
+  title={Efficiency comparison of document matching techniques},
+  author={Lacour, Patrice and Macdonald, Craig and Ounis, Iadh},
+  booktitle={Efficiency Issues in Information Retrieval Workshop; European Conference for Information Retrieval},
+  pages={37--46},
+  year={2008}
+}
+
+@article{brin:largescale:2012,
+  title={Reprint of: The anatomy of a large-scale hypertextual web search engine},
+  author={Brin, S. and Page, L.},
+  journal={Computer Networks},
+  volume={56},
+  number={18},
+  pages={3825--3833},
+  year={2012}
+}
+
+@article{zobel:inverted:1998,
+  title={Inverted files versus signature files for text indexing},
+  author={Zobel, J. and Moffat, A. and Ramamohanarao, K.},
+  journal={ACM Transactions on Database Systems (TODS)},
+  volume={23},
+  number={4},
+  pages={453--490},
+  year={1998}
+}
+
+@misc{harman:inverted:1992,
+  title={Inverted files},
+  author={Harman, D. and Fox, E. and Baeza-Yates, R. and Lee, W.},
+  year={1992},
+  url={http://orion.lcg.ufrj.br/Dr.Dobbs/books/book5/chap03.htm}
+}
+
+@inproceedings{roussopoulos:nearest:1995,
+  title={Nearest neighbor queries},
+  author={Roussopoulos, N. and Kelley, S. and Vincent, F.},
+  booktitle={Proceedings of the 1995 ACM SIGMOD International Conference On Management of Data},
+  volume={24},
+  number={2},
+  pages={71--79},
+  year={1995}
+}
+
+@article{bentley:kd:1975,
+  title={Multidimensional binary search trees used for associative searching},
+  author={Bentley, J. L.},
+  journal={Communications of the ACM},
+  volume={18},
+  number={9},
+  pages={509--517},
+  year={1975},
+  publisher={ACM}
+}
+
+@inproceedings{lazebnik:beyond:2006,
+  title={Beyond bags of features: Spatial pyramid matching for recognizing natural scene categories},
+  author={Lazebnik, S. and Schmid, C. and Ponce, J.},
+  booktitle={2006 IEEE Computer Society Conference on Computer Vision and Pattern Recognition},
+  volume={2},
+  pages={2169--2178},
+  year={2006}
+}
+
+@techreport{zhang:local:2005,
+  title={Local features and kernels for classification of texture and object categories: An in-depth study},
+  author={Zhang, J. and Marsza{\l}ek, M. and Lazebnik, S. and Schmid, C.},
+  year={2005},
+  type = {Research Report},
+  number = {RR-5737},
+  pages = {39},
+  institution = {INRIA}
+}
+
+@inproceedings{vigna:quasi:2013,
+  title={Quasi-succinct indices},
+  author={Vigna, S.},
+  booktitle={\wsdm{6th}},
+  pages={83--92},
+  year={2013}
+}
+
+@inproceedings{risvik:multi:2003,
+  title={Multi-Tier Architecture for Web Search Engines.},
+  author={Risvik, Knut Magne and Aasheim, Yngve and Lidal, Mathias},
+  booktitle={LA-WEB},
+  volume={3},
+  pages={132},
+  year={2003}
+}
+
+@inproceedings{baeza:efficiency:2009,
+  title={Efficiency trade-offs in two-tier web search systems},
+  author={Baeza-Yates, Ricardo and Murdock, Vanessa and Hauff, Claudia},
+  booktitle={Proceedings of the 32nd international ACM SIGIR conference on Research and development in information retrieval},
+  pages={163--170},
+  year={2009},
+  organization={ACM}
+}
+
+@inproceedings{wang:cascade:2011,
+ author = {Wang, L. and Lin, J. and Metzler, D.},
+ title = {A cascade ranking model for efficient ranked retrieval},
+ booktitle = {\sigir{34th}},
+ year = {2011},
+ pages = {105--114},
+ numpages = {10}
+}
+
+@inproceedings{liu:ssd:2016,
+  title={SSD: Single shot multibox detector},
+  author={Liu, W. and Anguelov, D. and Erhan, D. and Szegedy, C. and Reed, S. and Fu, C.-Y. and Berg, A. C.},
+  booktitle={Proceedings of the 14th European Conference on Computer Vision},
+  pages={21--37},
+  year={2016}
+}
+
+@article{fagin:optimal:2003,
+  title={Optimal aggregation algorithms for middleware},
+  author={Fagin, R. and Lotem, A. and Naor, M.},
+  journal={Journal of computer and system sciences},
+  volume={66},
+  number={4},
+  pages={614--656},
+  year={2003}
+}
+
+@unpublished{pibiri:compression,
+  title={Inverted Index Compression},
+  author={Pibiri, Giulio Ermanno and Venturini, Rossano},
+  note={Unpublished manuscript},
+  year={2017}
+}
+
+@inproceedings{jia:efficient:2010,
+  title={Efficient accumulator initialisation},
+  author={Jia, X.-F. and Trotman, A. and O’Keefe, R.},
+  booktitle={Proceedings of the 15th Australasian Document Computing Symposium},
+  pages={44--51},
+  year={2010}
+}
+
+@inproceedings{philbin:lost:2008,
+  title={Lost in quantization: Improving particular object retrieval in large scale image databases},
+  author={Philbin, J. and Chum, O. and Isard, M. and Sivic, J. and Zisserman, A.},
+  booktitle={2008 IEEE Conference on Computer Vision and Pattern Recognition},
+  pages={1--8},
+  year={2008}
+}
+
+@article{robertson:okapi:1995,
+  title={Okapi at TREC-3},
+  author={Robertson, Stephen E and Walker, Steve and Jones, Susan and Hancock-Beaulieu, Micheline M and Gatford, Mike and others},
+  journal={Nist Special Publication Sp},
+  volume={109},
+  pages={109},
+  year={1995},
+  publisher={NATIONAL INSTIUTE OF STANDARDS \& TECHNOLOGY}
+}
+
+@inproceedings{wang:learning:2010,
+ author = {Wang, L. and Lin, J. and Metzler, D.},
+ title = {Learning to efficiently rank},
+ booktitle = {\sigir{33rd}},
+ year = {2010},
+ pages = {138--145},
+ numpages = {8}
+}
+
+@article{liu:learning:2009,
+ author = {Liu, T.-Y.},
+ title = {Learning to rank for information retrieval},
+ journal = {Foundations and Trends in Information Retrieval},
+ volume = {3},
+ number = {3},
+ year = {2009},
+ pages = {225--331},
+ numpages = {107}
+}
+
+@misc{callan:clueweb:2009,
+  title={Clueweb09 data set},
+  author={Callan, J. and Hoy, M. and Yoo, C. and Zhao, L.},
+  year={2009},
+  url={http://lemurproject.org/clueweb09/}
+}
+
+@inproceedings{lin:toward:2016,
+  title={Toward reproducible baselines: The open-source IR reproducibility challenge},
+  author={Lin, J. and Crane, M. and Trotman, A. and Callan, J. and Chattopadhyaya, I. and Foley, J. and Ingersoll, G. and Macdonald, C. and Vigna, S.},
+  booktitle={Proceedings of the 38th European Conference on IR Research},
+  pages={408--420},
+  year={2016}
+}
+
+@article{persin:filtered:1996,
+  title={Filtered document retrieval with frequency-sorted indexes},
+  author={Persin, M. and Zobel, J. and Sacks-Davis, R.},
+  journal={Journal of the American Society for Information Science},
+  volume={47},
+  number={10},
+  pages={749--764},
+  year={1996}
+}
+
+@inproceedings{crane:comparison:2017,
+  title={A comparison of document-at-a-time and score-at-a-time query evaluation},
+  author={Crane, M. and Culpepper, J. S. and Lin, J. and Mackenzie, J. and Trotman, A.},
+  booktitle={\wsdm{10th}},
+  pages={201--210},
+  year={2017}
+}
+
+@inproceedings{mackenzie:early:2017,
+  title={Early termination heuristics for score-at-a-time index traversal},
+  author={Mackenzie, J. and Scholer, F. and Culpepper, J. S.},
+  booktitle={Proceedings of the 22nd Australasian Document Computing Symposium},
+  year={2017}
+}
+
+@inproceedings{strohman:efficient:2007,
+ author = {Strohman, T. and Croft, W. B.},
+ title = {Efficient document retrieval in main memory},
+ booktitle = {\sigir{30th}},
+ year = {2007},
+ pages = {175--182},
+ numpages = {8}
+}
+
+@inproceedings{anh:pruned:2006,
+  title={Pruned query evaluation using pre-computed impacts},
+  author={Anh, V. N. and Moffat, A.},
+  booktitle={\sigir{29th}},
+  pages={372--379},
+  year={2006}
+}
+
+@inproceedings{wang:fast:2016,
+  title={Fast first-phase candidate generation for cascading rankers},
+  author={Wang, Q. and Dimopoulos, C. and Suel, T.},
+  booktitle={\sigir{39th}},
+  pages={295--304},
+  year={2016}
+}
